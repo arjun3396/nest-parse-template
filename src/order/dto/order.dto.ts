@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-exports class OrderDto {
+export class OrderDto {
   constructor(@inject(ConsultationSessionModel) private consultationSessionModel: ConsultationSessionModel,
               @inject(QueryUtil) private queryUtil: QueryUtil) {}
 

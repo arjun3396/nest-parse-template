@@ -11,9 +11,11 @@ import { ProductModule } from './product/product.module';
 import { ProductBrandModule } from './product-brand/product-brand.module';
 import { ProductBranchService } from './product-branch/product-branch.service';
 import { OrderModule } from './order/order.module';
+import { NotificationModule } from './notification/notification.module';
+import { MainConcernModule } from './main-concern/main-concern.module';
 
 @Module({
-  imports: [UserModule, TreeModule, QuestionModule, ProductTypeModule, ProductModule, ProductBrandModule, OrderModule],
+  imports: [UserModule, TreeModule, QuestionModule, ProductTypeModule, ProductModule, ProductBrandModule, OrderModule, NotificationModule, MainConcernModule],
   controllers: [ParseServerController, TreeController],
   providers: [QueryService, TreeService, ProductBranchService],
 })
