@@ -5,9 +5,10 @@ import { UserModule } from './user/user.module';
 import { TreeService } from './tree/tree.service';
 import { TreeController } from './tree/tree.controller';
 import { TreeModule } from './tree/tree.module';
+import { QuestionModule } from './question/question.module';
 
 @Module({
-  imports: [UserModule, TreeModule],
+  imports: [UserModule, TreeModule, QuestionModule],
   controllers: [ParseServerController, TreeController],
   providers: [QueryService, TreeService],
 })
