@@ -16,9 +16,10 @@ import { MainConcernModule } from './main-concern/main-concern.module';
 import { InstantCheckupModule } from './instant-checkup/instant-checkup.module';
 import { HelpModule } from './help/help.module';
 import { FavouriteModule } from './favourite/favourite.module';
+import { CheckoutModule } from './checkout/checkout.module';
 
 @Module({
-  imports: [UserModule, TreeModule, QuestionModule, ProductTypeModule, ProductModule, ProductBrandModule, OrderModule, NotificationModule, MainConcernModule, InstantCheckupModule, HelpModule, FavouriteModule],
+  imports: [UserModule, TreeModule, QuestionModule, ProductTypeModule, ProductModule, ProductBrandModule, OrderModule, NotificationModule, MainConcernModule, InstantCheckupModule, HelpModule, FavouriteModule, CheckoutModule],
   controllers: [ParseServerController, TreeController],
   providers: [QueryService, TreeService, ProductBranchService],
 })
