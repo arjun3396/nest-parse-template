@@ -1,7 +1,6 @@
-import { inject, injectable } from 'inversify';
-import { CollectionUtil, QueryUtil } from '../utils/query.util';
+import { Injectable } from '@nestjs/common';
 
-@injectable()
+@Injectable()
 class ProductDto {
   constructor(@inject(QueryUtil) private query: QueryUtil) {}
 

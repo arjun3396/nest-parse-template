@@ -15,6 +15,8 @@ export class ProductService {
             if (item.variants.some((variant: any) => variant.storefrontId === lineItem.storefrontId)) {
               // eslint-disable-next-line no-param-reassign
               item.addedToCheckout = true;
+              // eslint-disable-next-line no-param-reassign
+              item.quantity = lineItem.quantity;
             }
           });
         }

@@ -10,9 +10,10 @@ import { ProductTypeModule } from './product-type/product-type.module';
 import { ProductModule } from './product/product.module';
 import { ProductBrandModule } from './product-brand/product-brand.module';
 import { ProductBranchService } from './product-branch/product-branch.service';
+import { OrderModule } from './order/order.module';
 
 @Module({
-  imports: [UserModule, TreeModule, QuestionModule, ProductTypeModule, ProductModule, ProductBrandModule],
+  imports: [UserModule, TreeModule, QuestionModule, ProductTypeModule, ProductModule, ProductBrandModule, OrderModule],
   controllers: [ParseServerController, TreeController],
   providers: [QueryService, TreeService, ProductBranchService],
 })
