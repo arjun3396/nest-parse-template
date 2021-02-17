@@ -6,9 +6,10 @@ import { TreeService } from './tree/tree.service';
 import { TreeController } from './tree/tree.controller';
 import { TreeModule } from './tree/tree.module';
 import { QuestionModule } from './question/question.module';
+import { ProductTypeModule } from './product-type/product-type.module';
 
 @Module({
-  imports: [UserModule, TreeModule, QuestionModule],
+  imports: [UserModule, TreeModule, QuestionModule, ProductTypeModule],
   controllers: [ParseServerController, TreeController],
   providers: [QueryService, TreeService],
 })
