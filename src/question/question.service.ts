@@ -18,7 +18,7 @@ export class QuestionService {
 
   whichParamsAreMissing(body: {[key: string]: any}): string {
     const requiredParams = ['uniqueIdentifier', 'title', 'inputs', 'type', 'table'];
-    let missingParams: string = 'These required params are missing: ';
+    let missingParams = 'These required params are missing: ';
     const keysInBody = Object.keys(body);
     requiredParams.forEach((key: string) => {
       if (!keysInBody.includes(key)) {

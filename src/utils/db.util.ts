@@ -1,6 +1,7 @@
 import { MongoDBConnection } from './mongo-db-connection.util';
+import { Injectable } from '@nestjs/common';
 
-@injectable()
+@Injectable()
 class DB {
   constructor(public mongoDBConnection: MongoDBConnection) {}
 

@@ -18,7 +18,7 @@ export class HelpService {
 
   whichParamsAreMissing(body: {[key: string]: any}): string {
     const requiredParams = ['name', 'email', 'mobileNumber', 'orderNumber', 'message'];
-    let missingParams: string = 'These required params are missing: ';
+    let missingParams = 'These required params are missing: ';
     const keysInBody = Object.keys(body);
     requiredParams.forEach((key: string) => {
       if (!keysInBody.includes(key)) {

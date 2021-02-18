@@ -8,7 +8,7 @@ class MongoDBConnection {
 
     client: MongoClient;
 
-    dbDropStatus: boolean = false;
+    dbDropStatus = false;
 
     isConnected(): boolean {
       return !!this.client && this.client.isConnected();

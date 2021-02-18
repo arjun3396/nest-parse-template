@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-extraneous-dependencies
 import 'reflect-metadata';
 import { ParseModelType } from '../../types/parse-model';
 import { Injectable } from '@nestjs/common';

@@ -1,20 +1,20 @@
-import { inject, injectable } from 'inversify';
 import rp from 'request-promise';
 import download from 'download';
 import fs from 'fs';
 import schedule from 'node-schedule';
 import readline from 'readline';
 import _ from 'lodash';
-import { container } from '../loaders/inversify';
 import { EventEmitterUtil } from '../utils/eventEmitter.util';
 import { MongoDBConnection } from '../utils/mongo-db-connection.util';
 import { SentryUtil } from '../utils/sentry.util';
 import { env } from '../../config';
+import { Injectable } from '@nestjs/common';
 
-@injectable()
+@Injectable()
 class DumpDataJob {
-  constructor(@inject(MongoDBConnection) public mongoDBConnection: MongoDBConnection) {
-    container.get(EventEmitterUtil).listenFor('dumpLatestProductsToParse', () => this.gotEvent());
+  constructor(public mongoDBConnection: MongoDBConnection,
+              public eventEmitterUtil: EventEmitterUtil) {
+    this.eventEmitterUtil.listenFor('dumpLatestProductsToParse', () => this.gotEvent());
     this.initialize();
   }
 
