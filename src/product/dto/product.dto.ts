@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 
 @Injectable()
-class ProductDto {
+export class ProductDto {
   constructor(@inject(QueryUtil) private query: QueryUtil) {}
 
   async findById(objectId: string, option: Parse.FullOptions): Promise<Parse.Object> {

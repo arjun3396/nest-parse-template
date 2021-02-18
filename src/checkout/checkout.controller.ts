@@ -1,9 +1,12 @@
 import { Controller } from '@nestjs/common';
+import { AuthUtil } from '../utils/auth.util';
+import { CheckoutService } from './checkout.service';
+import { SentryUtil } from '../utils/sentry.util';
 
 @Controller('checkout')
 export class CheckoutController {
-  constructor(@inject(AuthUtil) private authService: AuthUtil,
-              @inject(CheckoutService) private checkoutService: CheckoutService) {
+  constructor(private authService: AuthUtil,
+              private checkoutService: CheckoutService) {
     this.initialize();
   }
 

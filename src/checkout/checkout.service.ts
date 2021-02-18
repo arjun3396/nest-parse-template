@@ -1,17 +1,26 @@
 import { Injectable } from '@nestjs/common';
+import { UserDto } from '../user/dto/user.dto';
+import { OrderDto } from '../order/dto/order.dto';
+import { ConsultationSessionDto } from '../consultation-session/dto/consultation-session.dto';
+import { ProductDto } from '../product/dto/product.dto';
+import { CheckoutDto } from './dto/checkout.dto';
+import moment from 'moment';
+import _ from 'lodash';
+import { env } from '../../config';
+import rp from 'request-promise';
 
 @Injectable()
 export class CheckoutService {
-  constructor(@inject(UserModel) private userModel: UserModel,
-              @inject(OrderModel) private orderModel: OrderModel,
-              @inject(ConsultationSessionModel) private consultationSessionModel: ConsultationSessionModel,
-              @inject(ProductModel) private productModel: ProductModel,
-              @inject(CheckoutModel) private checkoutModel: CheckoutModel) {}
+  constructor(private userDto: UserDto,
+              private orderDto: OrderDto,
+              private consultationSessionDto: ConsultationSessionDto,
+              private productDto: ProductDto,
+              private checkoutDto: CheckoutDto) {}
 
   async clearCheckout(user: Parse.Object, option: Parse.FullOptions): Promise<{ [key: string]: any }> {
-    const _user = await this.userModel.fetchUser(user, option);
+    const _user = await this.userDto.fetchUser(user, option);
     const checkout = await this.createCheckout(_user);
-    await this.consultationSessionModel.archiveConsultationsIfAny(_user, option);
+    await this.consultationSessionDto.archiveConsultationsIfAny(_user, option);
     _user.set('checkoutId', checkout.checkoutId);
     _user.set('checkoutToken', atob(checkout.checkoutId).split('/')[4].split('?')[0]);
     _user.set('checkoutUpdatedAt', moment().toDate());
@@ -27,7 +36,7 @@ export class CheckoutService {
     } catch (error) {
       await Promise.reject(error);
     }
-    const checkout = await this.checkoutModel.findOrCreateCheckout(user, { useMasterKey: true });
+    const checkout = await this.checkoutDto.findOrCreateCheckout(user, { useMasterKey: true });
     checkout.set('checkoutUrl', result.data.checkoutCreate.checkout.webUrl);
     checkout.set('checkoutId', result.data.checkoutCreate.checkout.id);
     checkout.set('lineItems', lineItems);
@@ -40,14 +49,14 @@ export class CheckoutService {
 
   async addProductToCheckout(variantId: string, user: Parse.Object, option: Parse.FullOptions, quantity?: number)
     : Promise<{ [key: string]: any }> {
-    const checkout = await this.checkoutModel.findOrCreateCheckout(user, option);
+    const checkout = await this.checkoutDto.findOrCreateCheckout(user, option);
     const lineItems = checkout.get('lineItems');
     let totalPrice = checkout.get('totalPrice');
     let variant = _.find(lineItems, { storefrontId: variantId });
     if (lineItems.length && variant) {
       variant.quantity += quantity || 1;
     } else {
-      const product = await this.productModel.findByVariantId(variantId, option);
+      const product = await this.productDto.findByVariantId(variantId, option);
       variant = _.find(product.get('variants'), { storefrontId: variantId });
       variant.quantity = quantity || 1;
       lineItems.push(variant);
@@ -59,14 +68,14 @@ export class CheckoutService {
 
   async addProductToCart(variantId: string, user: Parse.Object, option: Parse.FullOptions, quantity?: number)
     : Promise<{ [key: string]: any }> {
-    const checkout = await this.checkoutModel.findOrCreateCheckout(user, option);
+    const checkout = await this.checkoutDto.findOrCreateCheckout(user, option);
     const lineItems = checkout.get('lineItems');
     let totalPrice = checkout.get('totalPrice');
     let variant = _.find(lineItems, { storefrontId: variantId });
     if (lineItems.length && variant) {
       variant.quantity += quantity || 1;
     } else {
-      const product = await this.productModel.findByVariantId(variantId, option);
+      const product = await this.productDto.findByVariantId(variantId, option);
       variant = _.find(product.get('variants'), { storefrontId: variantId });
       variant.quantity = quantity || 1;
       lineItems.push(variant);
@@ -81,7 +90,7 @@ export class CheckoutService {
   }
 
   async removeProductsFromCheckout(variantId: string, user: Parse.Object, option: Parse.FullOptions): Promise<{ [key: string]: any }> {
-    const checkout = await this.checkoutModel.findOrCreateCheckout(user, option);
+    const checkout = await this.checkoutDto.findOrCreateCheckout(user, option);
     const lineItems = checkout.get('lineItems');
     let totalPrice = checkout.get('totalPrice');
     const variant = _.find(lineItems, { storefrontId: variantId });
@@ -91,7 +100,7 @@ export class CheckoutService {
       if (!variant.quantity) {
         _.remove(lineItems, (item) => item.storefrontId === variantId);
         if (variant.addedByTree) {
-          await this.consultationSessionModel.archiveConsultationsIfAny(user, option);
+          await this.consultationSessionDto.archiveConsultationsIfAny(user, option);
         }
       }
     }
@@ -116,7 +125,7 @@ export class CheckoutService {
 
   async addProductsSuggestByTreeToCheckout(products: Array<{[key: string]: any}>, user: Parse.Object, option: Parse.FullOptions)
     : Promise<any> {
-    const consultationSession = await this.consultationSessionModel.findConsultationSession(user, option);
+    const consultationSession = await this.consultationSessionDto.findConsultationSession(user, option);
     let isRxRegimen = false;
     if (consultationSession && consultationSession.get('regimenTag') && consultationSession.get('regimenTag').includes('RX')) {
       isRxRegimen = true;
@@ -128,7 +137,7 @@ export class CheckoutService {
       variant.addedByTree = true;
       return variant;
     });
-    const checkout = await this.checkoutModel.findOrCreateCheckout(user, option);
+    const checkout = await this.checkoutDto.findOrCreateCheckout(user, option);
     const totalPrice: number = lineItems.map((lineItem: any) => lineItem.price)
       .reduce((total: number, price: any) => total + Number(price), 0);
     await checkout.save({ lineItems, totalPrice }, option);
@@ -140,7 +149,7 @@ export class CheckoutService {
   //   if (!address || (address && !Object.keys(address).length)) {
   //     return Promise.reject(new Error('Mising Required fields in address'));
   //   }
-  //   const checkout = await this.checkoutModel.findOrCreateCheckout(user, option);
+  //   const checkout = await this.checkoutDto.findOrCreateCheckout(user, option);
   //   const query = `mutation { checkoutShippingAddressUpdateV2(shippingAddress: ${address} checkoutId: ${checkout.get('checkoutId')}) { checkout { id webUrl totalPrice lineItems(first:8)
   //     { edges { node { id title quantity variant { id price weight weightUnit image { src } product { id } } } } }  } } }`;
   //   let result: { [key: string]: any };
@@ -167,7 +176,7 @@ export class CheckoutService {
     } catch (error) {
       await Promise.reject(error);
     }
-    const checkout = await this.checkoutModel.findOrCreateCheckout(user, option);
+    const checkout = await this.checkoutDto.findOrCreateCheckout(user, option);
     await checkout.save({ result }, option);
     return result;
   }
@@ -185,14 +194,14 @@ export class CheckoutService {
       return Promise.reject(new Error('Missing required params: orderId'));
     }
 
-    const order = await this.orderModel.getOrder(orderId, option);
+    const order = await this.orderDto.getOrder(orderId, option);
     if (!order) {
       return Promise.reject(new Error(`No order found with orderId: ${orderId}`));
     }
 
     const lineItems = order.get('checkoutLineItems');
     await this.clearCheckout(user, option);
-    const checkout = await this.checkoutModel.findOrCreateCheckout(user, option);
+    const checkout = await this.checkoutDto.findOrCreateCheckout(user, option);
     await checkout.save({ lineItems }, option);
     return this.getCheckout(user, option);
   }
@@ -206,7 +215,7 @@ export class CheckoutService {
   }
 
   async getCheckout(user: Parse.Object, option: Parse.FullOptions): Promise<{ [key: string]: any }> {
-    const checkout: Parse.Object = await this.checkoutModel.findOrCreateCheckout(user, option);
+    const checkout: Parse.Object = await this.checkoutDto.findOrCreateCheckout(user, option);
     const result = { lineItems: checkout.get('lineItems'),
       totalPrice: checkout.get('totalPrice').toFixed(2),
       checkoutUrl: checkout.get('checkoutUrl'),
@@ -215,7 +224,7 @@ export class CheckoutService {
   }
 
   async getLineItemsCount(user: Parse.Object, option: Parse.FullOptions): Promise<number> {
-    const checkout: Parse.Object = await this.checkoutModel.findOrCreateCheckout(user, option);
+    const checkout: Parse.Object = await this.checkoutDto.findOrCreateCheckout(user, option);
     return checkout.get('lineItems').length;
   }
 }

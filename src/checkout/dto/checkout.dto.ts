@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { CollectionUtil, QueryUtil } from '../../utils/query.util';
 
 @Injectable()
 export class CheckoutDto {
-  constructor(@inject(QueryUtil) private queryUtil: QueryUtil) {}
+  constructor(private queryUtil: QueryUtil) {}
 
   async findOrCreateCheckout(user: Parse.Object, option: Parse.FullOptions): Promise<Parse.Object> {
     let checkout = await this.queryUtil.findOne(CollectionUtil.Checkout, {
