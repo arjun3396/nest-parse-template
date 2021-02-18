@@ -1,9 +1,12 @@
 import { Controller } from '@nestjs/common';
+import { AuthUtil } from '../utils/auth.util';
+import { OrderService } from './order.service';
+import { SentryUtil } from '../utils/sentry.util';
 
 @Controller('order')
 export class OrderController {
-  constructor(@inject(AuthUtil) private authService: AuthUtil,
-              @inject(OrderService) private orderService: OrderService) {
+  constructor(private authService: AuthUtil,
+              private orderService: OrderService) {
     this.initialize();
   }
 

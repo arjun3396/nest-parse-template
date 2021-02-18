@@ -1,17 +1,27 @@
 import { Injectable } from '@nestjs/common';
+import { UserDto } from '../user/dto/user.dto';
+import { OrderDto } from './dto/order.dto';
+import { ProductDto } from '../product/dto/product.dto';
+import { FavouriteService } from '../favourite/favourite.service';
+import { CheckoutService } from '../checkout/checkout.service';
+import { ProductService } from '../product/product.service';
+import { PurchaseHistoryService } from '../purchase-history/purchase-history.service';
+import { env } from '../../config';
+import rp from 'request-promise';
+import _ from 'lodash';
 
 @Injectable()
 export class OrderService {
-  constructor(@inject(UserModel) private userModel: UserModel,
-              @inject(OrderModel) private orderModel: OrderModel,
-              @inject(ProductModel) private productModel: ProductModel,
-              @inject(ProductService) private productService: ProductService,
-              @inject(CheckoutService) private checkoutService: CheckoutService,
-              @inject(FavouriteService) private favouriteServer: FavouriteService,
-              @inject(PurchaseHistoryService) private purchaseHistoryService: PurchaseHistoryService) {}
+  constructor(private userDto: UserDto,
+              private orderDto: OrderDto,
+              private productDto: ProductDto,
+              private productService: ProductService,
+              private checkoutService: CheckoutService,
+              private favouriteServer: FavouriteService,
+              private purchaseHistoryService: PurchaseHistoryService) {}
 
   async getOrderHistory(user: Parse.Object, option: Parse.FullOptions): Promise<Array<{ [key: string]: any }>> {
-    const allOrders = await this.orderModel.getAllOrders(user, option);
+    const allOrders = await this.orderDto.getAllOrders(user, option);
     return allOrders;
   }
 
@@ -20,7 +30,7 @@ export class OrderService {
     if (!orderId) {
       return Promise.reject(new Error('Missing field orderId'));
     }
-    const order = await this.orderModel.getOrder(orderId, option);
+    const order = await this.orderDto.getOrder(orderId, option);
     if (!order) {
       return Promise.reject(new Error('Order not found'));
     }
@@ -55,7 +65,7 @@ export class OrderService {
     const purchaseEntries = [];
     for (let i = 0; i < lineItems.length; i += 1) {
       // eslint-disable-next-line no-await-in-loop
-      const item = await this.productModel.findById(lineItems[i].product_id.toString(), option);
+      const item = await this.productDto.findById(lineItems[i].product_id.toString(), option);
       lineItemsCopy[i].product_id = lineItemsCopy[i].product_id.toString();
       lineItems[i] = item;
       purchaseEntries.push(this.purchaseHistoryService.addPurchaseEntry(user, item));
@@ -78,12 +88,12 @@ export class OrderService {
     });
 
     delete orderDetails.line_items;
-    const result = await this.orderModel.saveOrder(user, orderDetails, lineItemsJSONL, checkoutLineItems, option);
+    const result = await this.orderDto.saveOrder(user, orderDetails, lineItemsJSONL, checkoutLineItems, option);
     return result;
   }
 
   async cancelOrderWebhookResponse(_orderDetails: {[key: string]: any}, option: Parse.FullOptions): Promise<any> {
-    const order = await this.orderModel.getOrder(_orderDetails.id, option);
+    const order = await this.orderDto.getOrder(_orderDetails.id, option);
     if (!order) { return { status: 'success', message: 'not an app order' }; }
     return order.save({ canceled: true }, option);
   }

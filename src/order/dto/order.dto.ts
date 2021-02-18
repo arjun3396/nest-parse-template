@@ -1,9 +1,12 @@
 import { Injectable } from '@nestjs/common';
+import { CollectionUtil, QueryUtil } from '../../utils/query.util';
+import { ConsultationSessionDto } from '../../consultation-session/dto/consultation-session.dto';
+import { env } from '../../../config';
 
 @Injectable()
 export class OrderDto {
-  constructor(@inject(ConsultationSessionModel) private consultationSessionModel: ConsultationSessionModel,
-              @inject(QueryUtil) private queryUtil: QueryUtil) {}
+  constructor(private consultationSessionDto: ConsultationSessionDto,
+              private queryUtil: QueryUtil) {}
 
   async getAllOrders(user: Parse.Object, option: Parse.FullOptions): Promise<Array<Parse.Object>> {
     return this.queryUtil.find(CollectionUtil.Order, { where: { user }, descending: 'createdAt', option });
@@ -16,7 +19,7 @@ export class OrderDto {
 
   async saveOrder(user: Parse.Object, orderDetails: {[key: string]: any}, lineItems: any, checkoutLineItems: any, option: Parse.FullOptions)
     : Promise<{[key: string]: any}> {
-    const consultationSession = await this.consultationSessionModel.findConsultationSession(user, option);
+    const consultationSession = await this.consultationSessionDto.findConsultationSession(user, option);
     const order = new CollectionUtil.Order();
     order.set('orderDetails', orderDetails);
     order.set('lineItems', lineItems);
