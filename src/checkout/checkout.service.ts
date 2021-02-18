@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import { UserDto } from '../user/dto/user.dto';
 import { OrderDto } from '../order/dto/order.dto';
 import { ConsultationSessionDto } from '../consultation-session/dto/consultation-session.dto';
 import { ProductDto } from '../product/dto/product.dto';
@@ -12,7 +11,7 @@ import { QueryUtil } from '../utils/query.util';
 
 @Injectable()
 export class CheckoutService {
-  constructor(private userDto: UserDto,
+  constructor(private orderDto: OrderDto,
               private consultationSessionDto: ConsultationSessionDto,
               private productDto: ProductDto,
               private checkoutDto: CheckoutDto,

@@ -12,8 +12,7 @@ import _ from 'lodash';
 
 @Injectable()
 export class OrderService {
-  constructor(private userDto: UserDto,
-              private orderDto: OrderDto,
+  constructor(private orderDto: OrderDto,
               private productDto: ProductDto,
               private productService: ProductService,
               private checkoutService: CheckoutService,
