@@ -15,7 +15,6 @@ export class InstantCheckupController {
   initialize(): void {
     this.saveInstantCheckupAndGetAllInstantCheckupURLs();
     this.getPreviousInstantCheckups();
-    this.validateToken();
     this.deleteInstantCheckup();
   }
 

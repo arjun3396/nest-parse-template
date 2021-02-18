@@ -23,6 +23,7 @@ export class UserController {
     this.setConcern();
     this.getFavouritesAndCheckoutCount();
     this.mergeAccount();
+    this.validateToken();
   }
 
   logInUser(): void {
