@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { CollectionUtil, QueryUtil } from '../utils/query.util';
 
 @Injectable()
 export class ProductBrandService {
-  constructor(@inject(QueryUtil) private queryService: QueryUtil) {}
+  constructor(private queryService: QueryUtil) {}
 
   async addProductBrand(brand: string): Promise<{ [key: string]: any }> {
     if (!brand) { return { result: 'failed', message: 'Missing required parameter: brand' }; }

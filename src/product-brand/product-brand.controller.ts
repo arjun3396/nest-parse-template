@@ -1,9 +1,12 @@
 import { Controller } from '@nestjs/common';
+import { ProductBrandService } from './product-brand.service';
+import { AuthUtil } from '../utils/auth.util';
+import { SentryUtil } from '../utils/sentry.util';
 
 @Controller('product-brand')
 export class ProductBrandController {
-  constructor(@inject(AuthUtil) private authService: AuthUtil,
-              @inject(ProductBrandService) private productBrandService: ProductBrandService) {
+  constructor(private authService: AuthUtil,
+              private productBrandService: ProductBrandService) {
     this.initialize();
   }
 
