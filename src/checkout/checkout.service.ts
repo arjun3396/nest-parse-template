@@ -8,17 +8,18 @@ import moment from 'moment';
 import _ from 'lodash';
 import { env } from '../../config';
 import rp from 'request-promise';
+import { QueryUtil } from '../utils/query.util';
 
 @Injectable()
 export class CheckoutService {
   constructor(private userDto: UserDto,
-              private orderDto: OrderDto,
               private consultationSessionDto: ConsultationSessionDto,
               private productDto: ProductDto,
-              private checkoutDto: CheckoutDto) {}
+              private checkoutDto: CheckoutDto,
+              private queryUtil: QueryUtil) {}
 
   async clearCheckout(user: Parse.Object, option: Parse.FullOptions): Promise<{ [key: string]: any }> {
-    const _user = await this.userDto.fetchUser(user, option);
+    const _user = await this.queryUtil.fetchObject(user, 'username', option);
     const checkout = await this.createCheckout(_user);
     await this.consultationSessionDto.archiveConsultationsIfAny(_user, option);
     _user.set('checkoutId', checkout.checkoutId);

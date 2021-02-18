@@ -1,14 +1,12 @@
 import { Controller } from '@nestjs/common';
 import { AuthUtil } from '../utils/auth.util';
 import { InstantCheckupService } from './instant-checkup.service';
-import { UserDto } from '../user/dto/user.dto';
 import { SentryUtil } from '../utils/sentry.util';
 
 @Controller('instant-checkup')
 export class InstantCheckupController {
   constructor(private authService: AuthUtil,
-              private instantCheckupService: InstantCheckupService,
-              private userDto: UserDto) {
+              private instantCheckupService: InstantCheckupService) {
     this.initialize();
   }
 
