@@ -14,6 +14,7 @@ export class CheckoutController {
     this.addProductToCheckout();
     this.addProductToCart();
     this.removeProductsFromCheckout();
+    this.removeProductsFromCart();
     this.updateCheckout();
     this.getCheckout();
     this.repeatOrder();
@@ -114,7 +115,21 @@ export class CheckoutController {
           SentryUtil.captureException(error);
           return Promise.reject(error);
         }
-        return result;
+      });
+  }
+
+  removeProductsFromCart(): void {
+    this.authService.authenticatedCloudFunction('removeProductsFromCart',
+      async (req: Parse.Cloud.FunctionRequest, option: Parse.FullOptions) => {
+        let result: { [key: string]: any };
+        try {
+          result = await this.checkoutService
+            .removeProductsFromCart(req.params.variantId, req.user, option);
+          return result;
+        } catch (error) {
+          SentryUtil.captureException(error);
+          return Promise.reject(error);
+        }
       });
   }
 }

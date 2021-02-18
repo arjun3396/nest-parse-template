@@ -108,6 +108,29 @@ export class CheckoutService {
     return this.getCheckout(user, option);
   }
 
+  async removeProductsFromCart(variantId: string, user: Parse.Object, option: Parse.FullOptions): Promise<{ [key: string]: any }> {
+    const checkout = await this.checkoutDto.findOrCreateCheckout(user, option);
+    const lineItems = checkout.get('lineItems');
+    let totalPrice = checkout.get('totalPrice');
+    const variant = _.find(lineItems, { storefrontId: variantId });
+    if (lineItems.length && variant) {
+      variant.quantity -= 1;
+      totalPrice -= variant.price;
+      if (!variant.quantity) {
+        _.remove(lineItems, (item) => item.storefrontId === variantId);
+        if (variant.addedByTree) {
+          await this.consultationSessionDto.archiveConsultationsIfAny(user, option);
+        }
+      }
+    }
+    await checkout.save({ lineItems, totalPrice }, option);
+    const updatedCheckout = await this.getCheckout(user, option);
+    return {
+      updatedProductWithQuantity: [variant],
+      updatedCheckout,
+    };
+  }
+
   async addLineItemsToStorefrontCheckout(user: Parse.Object, option: Parse.FullOptions): Promise<{ [key: string]: any }> {
     const checkout = await this.getCheckout(user, option);
     const lineItems = this.getLineItemsFromCheckout(checkout);
@@ -143,23 +166,6 @@ export class CheckoutService {
     await checkout.save({ lineItems, totalPrice }, option);
     return this.getCheckout(user, option);
   }
-
-  // async setAddressOnCheckout(address: any, user: Parse.User, option: Parse.FullOptions)
-  //   : Promise<any> {
-  //   if (!address || (address && !Object.keys(address).length)) {
-  //     return Promise.reject(new Error('Mising Required fields in address'));
-  //   }
-  //   const checkout = await this.checkoutDto.findOrCreateCheckout(user, option);
-  //   const query = `mutation { checkoutShippingAddressUpdateV2(shippingAddress: ${address} checkoutId: ${checkout.get('checkoutId')}) { checkout { id webUrl totalPrice lineItems(first:8)
-  //     { edges { node { id title quantity variant { id price weight weightUnit image { src } product { id } } } } }  } } }`;
-  //   let result: { [key: string]: any };
-  //   try {
-  //     result = await this.fetchQuery(query, user, option);
-  //   } catch (error) {
-  //     await Promise.reject(error);
-  //   }
-  //   return result;
-  // }
 
   async fetchQuery(query: string, user: Parse.Object, option: Parse.FullOptions): Promise<{ [key: string]: any }> {
     let result: { [key: string]: any };
