@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { CollectionUtil, QueryUtil } from '../../utils/query.util';
 
 @Injectable()
 export class UserDto {
-  constructor(@inject(QueryUtil) private queryUtil: QueryUtil) {}
+  constructor(private queryUtil: QueryUtil) {}
 
   getUserPointer(objectId: string): any {
     return this.queryUtil.getPointerFromId(objectId, CollectionUtil.User);

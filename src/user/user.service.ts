@@ -1,16 +1,22 @@
 import { Injectable } from '@nestjs/common';
+import { FavouriteDto } from '../favourite/dto/favourite.dto';
+import { InstantCheckupDto } from '../instant-checkup/dto/instant-checkup.dto';
+import { OrderDto } from '../order/dto/order.dto';
+import { CheckoutDto } from '../checkout/dto/checkout.dto';
+import { CollectionUtil, QueryUtil } from '../utils/query.util';
+import { UserDto } from './dto/user.dto';
 
 @Injectable()
 export class UserService {
-  constructor(@inject(UserModel) private userModel: UserModel,
-              @inject(QueryUtil) private queryUtil: QueryUtil,
-              @inject(CheckoutModel) private checkoutModel: CheckoutModel,
-              @inject(OrderModel) private orderModel: OrderModel,
-              @inject(InstantCheckupModel) private instantCheckupModel: InstantCheckupModel,
-              @inject(FavouriteModel) private favouriteModel: FavouriteModel) {}
+  constructor(private userDto: UserDto,
+              private queryUtil: QueryUtil,
+              private checkoutDto: CheckoutDto,
+              private orderDto: OrderDto,
+              private instantCheckupDto: InstantCheckupDto,
+              private favouriteDto: FavouriteDto) {}
 
   async pushItemToConcernList(user: Parse.Object, concern: string): Promise<Parse.Object> {
-    const _user = await this.userModel.fetchUser(user, { useMasterKey: true });
+    const _user = await this.userDto.fetchUser(user, { useMasterKey: true });
     const concernList = _user.get('concernList') || [];
     if (concernList.includes(concern)) { return _user; }
     concernList.push(concern);
@@ -21,17 +27,17 @@ export class UserService {
     if (!oldUserId || !newUserId) {
       return Promise.reject(new Error('Missing required params: oldUserId OR newUserId'));
     }
-    const oldUser = await this.userModel.getUserPointer(oldUserId);
-    const user = await this.userModel.findUserById(newUserId);
+    const oldUser = await this.userDto.getUserPointer(oldUserId);
+    const user = await this.userDto.findUserById(newUserId);
     if (!user) {
       return Promise.reject(new Error(`No new user found with id: ${newUserId}`));
     }
 
     const [favourites, checkout, orders, instantCheckups] = await Promise.all([
-      this.favouriteModel.fetchFavourites(oldUser, { useMasterKey: true }),
-      this.checkoutModel.findCheckout(oldUser, { useMasterKey: true }),
-      this.orderModel.getAllOrders(oldUser, { useMasterKey: true }),
-      this.instantCheckupModel.findInstantCheckups({ user: oldUser }, { useMasterKey: true }),
+      this.favouriteDto.fetchFavourites(oldUser, { useMasterKey: true }),
+      this.checkoutDto.findCheckout(oldUser, { useMasterKey: true }),
+      this.orderDto.getAllOrders(oldUser, { useMasterKey: true }),
+      this.instantCheckupDto.findInstantCheckups({ user: oldUser }, { useMasterKey: true }),
     ]);
 
     const promises = [];
@@ -42,7 +48,7 @@ export class UserService {
       instantCheckups.forEach((item: Parse.Object) => promises.push(item.save({ user }, { useMasterKey: true })));
     }
     if (checkout) {
-      await this.checkoutModel.deleteCheckout(user, { useMasterKey: true });
+      await this.checkoutDto.deleteCheckout(user, { useMasterKey: true });
       promises.push(checkout.save({ user }, { useMasterKey: true }));
       user.set('checkoutId', checkout.get('checkoutId'));
       user.set('checkoutToken', atob(checkout.get('checkoutId')).split('/')[4].split('?')[0]);
@@ -69,11 +75,11 @@ export class UserService {
 
   async findOrSignUpUser(email: string, patientName: string, deviceId: string, signupSource: string, authDataId: string)
     : Promise<Parse.Object> {
-    const user = await this.userModel.findUserByAuthDataId(authDataId);
+    const user = await this.userDto.findUserByAuthDataId(authDataId);
     if (user) {
       return user;
     }
-    return this.userModel.createNewUserObject(email, patientName, deviceId, signupSource, authDataId);
+    return this.userDto.createNewUserObject(email, patientName, deviceId, signupSource, authDataId);
   }
 
   async setConcern(mainConcernId: string, _user: Parse.Object, option: Parse.FullOptions): Promise<any> {

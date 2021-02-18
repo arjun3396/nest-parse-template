@@ -1,13 +1,20 @@
 import { Controller } from '@nestjs/common';
+import { UserService } from './user.service';
+import { ConsultationSessionService } from '../consultation-session/consultation-session.service';
+import { CheckoutService } from '../checkout/checkout.service';
+import { FavouriteService } from '../favourite/favourite.service';
+import { QueryUtil } from '../utils/query.util';
+import { AuthUtil } from '../utils/auth.util';
+import { SentryUtil } from '../utils/sentry.util';
 
 @Controller('user')
 export class UserController {
-  constructor(@inject(AuthUtil) private authUtil: AuthUtil,
-              @inject(QueryUtil) private queryUtil: QueryUtil,
-              @inject(FavouriteService) private favouriteService: FavouriteService,
-              @inject(CheckoutService) private checkoutService: CheckoutService,
-              @inject(ConsultationSessionService) private consultationSessionService: ConsultationSessionService,
-              @inject(UserService) private userService: UserService) {
+  constructor(private authUtil: AuthUtil,
+              private queryUtil: QueryUtil,
+              private favouriteService: FavouriteService,
+              private checkoutService: CheckoutService,
+              private consultationSessionService: ConsultationSessionService,
+              private userService: UserService) {
     this.initialize();
   }
 
