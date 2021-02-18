@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { CollectionUtil, QueryUtil } from '../../utils/query.util';
 
 @Injectable()
 export class FavouriteDto {
-  constructor(@inject(QueryUtil) private queryUtil: QueryUtil) {}
+  constructor(private queryUtil: QueryUtil) {}
 
   async fetchFavourites(user: Parse.Object, option: Parse.FullOptions): Promise<Array<Parse.Object>> {
     const favorites = await this.queryUtil.find(CollectionUtil.Favourite, {

@@ -1,9 +1,12 @@
 import { Controller } from '@nestjs/common';
+import { FavouriteService } from './favourite.service';
+import { AuthUtil } from '../utils/auth.util';
+import { SentryUtil } from '../utils/sentry.util';
 
 @Controller('favourite')
 export class FavouriteController {
-  constructor(@inject(AuthUtil) private authService: AuthUtil,
-              @inject(FavouriteService) private favouriteService: FavouriteService) {
+  constructor(private authService: AuthUtil,
+              private favouriteService: FavouriteService) {
     this.initialize();
   }
 
