@@ -1,12 +1,14 @@
 import { Injectable } from '@nestjs/common';
+import { UserResponseDto } from './dto/user-response.dto';
+import { QueryUtil } from '../utils/query.util';
 
 @Injectable()
 export class UserResponseService {
-  constructor(@inject(QueryUtil) private queryUtil: QueryUtil,
-              @inject(UserResponseModel) private userResponseModel: UserResponseModel) {}
+  constructor(private queryUtil: QueryUtil,
+              private userResponseDto: UserResponseDto) {}
 
   async saveUserResponse(user: Parse.Object, question: Parse.Object, answer: string, option: Parse.FullOptions): Promise<any> {
-    const userResponse = await this.userResponseModel.findUserResponse(user, question, option);
+    const userResponse = await this.userResponseDto.findUserResponse(user, question, option);
     userResponse.set('answer', answer);
     let answerCopy = answer;
     if (question.get('evaluateAnswer') && question.get('uniqueIdentifier') === 'StateResidence') {
@@ -53,15 +55,15 @@ export class UserResponseService {
   }
 
   async findOrCreateUserResponse(user: Parse.Object, question: Parse.Object, option: Parse.FullOptions): Promise<Parse.Object> {
-    let userResponse = await this.userResponseModel.findUserResponse(user, question, option);
+    let userResponse = await this.userResponseDto.findUserResponse(user, question, option);
     if (userResponse) {
       return userResponse;
     }
-    userResponse = await this.userResponseModel.createUserResponse(user, question, option);
+    userResponse = await this.userResponseDto.createUserResponse(user, question, option);
     return userResponse;
   }
 
   async getAllUserResponse(user: Parse.Object): Promise<Array<Parse.Object>> {
-    return this.userResponseModel.findAllUserResponse(user);
+    return this.userResponseDto.findAllUserResponse(user);
   }
 }

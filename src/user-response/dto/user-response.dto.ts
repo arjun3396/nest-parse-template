@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { CollectionUtil, QueryUtil } from '../../utils/query.util';
 
 @Injectable()
 export class UserResponseDto {
-  constructor(@inject(QueryUtil) private queryUtil: QueryUtil) {}
+  constructor(private queryUtil: QueryUtil) {}
 
   async createUserResponse(user: Parse.Object, question: Parse.Object, option: Parse.FullOptions): Promise<Parse.Object> {
     const userResponseCount = await this.queryUtil
