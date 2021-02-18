@@ -8,6 +8,7 @@ import { MainConcernService } from '../main-concern/main-concern.service';
 import { ConsultationSessionDto } from '../consultation-session/dto/consultation-session.dto';
 import { QuestionDto } from '../question/dto/question.dto';
 import { UserDto } from '../user/dto/user.dto';
+import * as regimenMap from '../../regimenTagMap.json';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 // const regimenMap = require('../../regimenTagMap.json');
@@ -110,7 +111,7 @@ export class TreeService {
     allUserResponse.forEach((response: Parse.Object) => evaluatedResponse.push(response.get('evaluatedAnswer')));
     const evaluatedResponseString = evaluatedResponse.join('_');
     const key = [concern, evaluatedResponseString].join('_');
-    // return regimenMap[key] as string;
-    return 'tempString';
+    return regimenMap[key] as string;
+    // return 'tempString';
   }
 }

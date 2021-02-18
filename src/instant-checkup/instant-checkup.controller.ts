@@ -19,22 +19,6 @@ export class InstantCheckupController {
     this.deleteInstantCheckup();
   }
 
-  validateToken(): void {
-    this.authService.authenticatedCloudFunction('validateToken', async (req: Parse.Cloud.FunctionRequest, option: Parse.FullOptions) => {
-      try {
-        if (!req.user.get('type')) { return req.user; }
-        const { userId }: Parse.Cloud.Params = req.params;
-        if (!userId) {
-          await Promise.reject(new Error('userid is missing'));
-        }
-        const result = this.userDto.findUserByUsername(userId, option);
-        return result;
-      } catch (error) {
-        await Promise.reject(new Error(error));
-      }
-    });
-  }
-
   saveInstantCheckupAndGetAllInstantCheckupURLs(): void {
     this.authService.authenticatedCloudFunction('saveInstantCheckupAndGetAllInstantCheckupURLs',
       async (req: Parse.Cloud.FunctionRequest) => {

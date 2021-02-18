@@ -98,4 +98,8 @@ export class UserService {
   async fetchUser(user: Parse.Object, field: string, option: Parse.FullOptions): Promise<Parse.Object> {
     return this.queryUtil.fetchObject(user, field, option);
   }
+
+  async validateToken(userId: string, option: Parse.FullOptions): Promise<Parse.Object> {
+    return this.userDto.findUserByUsername(userId, option);
+  }
 }

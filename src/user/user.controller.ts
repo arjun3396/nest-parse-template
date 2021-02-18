@@ -51,6 +51,22 @@ export class UserController {
     });
   }
 
+  validateToken(): void {
+    this.authUtil.authenticatedCloudFunction('validateToken', async (req: Parse.Cloud.FunctionRequest, option: Parse.FullOptions) => {
+      try {
+        if (!req.user.get('type')) { return req.user; }
+        const { userId }: Parse.Cloud.Params = req.params;
+        if (!userId) {
+          await Promise.reject(new Error('userid is missing'));
+        }
+        const result = this.userService.validateToken(userId, option);
+        return result;
+      } catch (error) {
+        await Promise.reject(new Error(error));
+      }
+    });
+  }
+
   setConcern(): void {
     this.authUtil.authenticatedCloudFunction('setConcern', async (req: Parse.Cloud.FunctionRequest, option: Parse.FullOptions) => {
       let result: { [key: string]: any };
