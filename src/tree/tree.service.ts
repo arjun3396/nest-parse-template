@@ -1,18 +1,30 @@
 import { Injectable } from '@nestjs/common';
+import { Tree } from '../utils/tree.util';
+import { CollectionUtil, QueryUtil } from '../utils/query.util';
+import { UserResponseService } from '../user-response/user-response.service';
+import { ProductService } from '../product/product.service';
+import { CheckoutService } from '../checkout/checkout.service';
+import { MainConcernService } from '../main-concern/main-concern.service';
+import { ConsultationSessionDto } from '../consultation-session/dto/consultation-session.dto';
+import { QuestionDto } from '../question/dto/question.dto';
+import { UserDto } from '../user/dto/user.dto';
+
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const regimenMap = require('../regimenTagMap');
 
 @Injectable()
 export class TreeService {
   tree: any = {};
 
-  constructor(@inject(Tree) private treeUtil: Tree,
-              @inject(UserModel) private userModel: UserModel,
-              @inject(QuestionModel) private questionModel: QuestionModel,
-              @inject(QueryUtil) private queryUtil: QueryUtil,
-              @inject(UserResponseService) private userResponseService: UserResponseService,
-              @inject(ProductService) private productService: ProductService,
-              @inject(CheckoutService) private checkoutService: CheckoutService,
-              @inject(MainConcernService) private mainConcernService: MainConcernService,
-              @inject(ConsultationSessionModel) private consultationSessionModel: ConsultationSessionModel) {}
+  constructor(private treeUtil: Tree,
+              private userModel: UserDto,
+              private questionDto: QuestionDto,
+              private queryUtil: QueryUtil,
+              private userResponseService: UserResponseService,
+              private productService: ProductService,
+              private checkoutService: CheckoutService,
+              private mainConcernService: MainConcernService,
+              private consultationSessionDto: ConsultationSessionDto) {}
 
   async createAndStoreTree(): Promise<any> {
     const [tree] = await this.treeUtil.initialize();
@@ -22,11 +34,11 @@ export class TreeService {
   async storeUserResponseToQuestion(answer: string, user: Parse.Object, option: Parse.FullOptions): Promise<{[key: string]: any}> {
     const _user = await this.queryUtil.findOne(CollectionUtil.User, { where: { objectId: user.id }, option });
     const { questionId } = this.tree[_user.get('currentNode')];
-    const question = await this.questionModel.findQuestionById(questionId);
+    const question = await this.questionDto.findQuestionById(questionId);
     if (question.get('table') === '_User') {
       _user.set(question.get('uniqueIdentifier'), answer);
     }
-    const consultationSession = await this.consultationSessionModel.findConsultationSession(_user, option);
+    const consultationSession = await this.consultationSessionDto.findConsultationSession(_user, option);
     consultationSession.set(question.get('uniqueIdentifier'), answer);
     await consultationSession.save({}, option);
 
@@ -51,7 +63,7 @@ export class TreeService {
     console.log('MONITOR getNextTreeNode after fetch', _user.get('activeConcern'), _user.get('activeConcernClass'));
     if (!this.tree[_user.get('currentNode')]) {
       const regimenTag = await this.getRegimenTag(_user);
-      const consultationSession = await this.consultationSessionModel.findConsultationSession(_user, option);
+      const consultationSession = await this.consultationSessionDto.findConsultationSession(_user, option);
       consultationSession.set('regimenTag', regimenTag);
       consultationSession.save({}, option)
         .catch((error) => Promise.reject(error));
@@ -61,7 +73,7 @@ export class TreeService {
       return { question: undefined, treeCompleted: true, checkoutCreated: !!checkout };
     }
     const nextQuestionId = this.tree[_user.get('currentNode')].questionId;
-    const question = await this.questionModel.findQuestionById(nextQuestionId);
+    const question = await this.questionDto.findQuestionById(nextQuestionId);
     const mainConcern = await this.mainConcernService.getConcernByName(_user.get('activeConcern'));
     if (question.get('uniqueIdentifier') === 'RxOrNonRx' && mainConcern && mainConcern.get('rxNotAvailable')) {
       await this.storeUserResponseToQuestion('Non-Rx', _user, option);

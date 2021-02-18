@@ -1,9 +1,12 @@
 import { Controller } from '@nestjs/common';
+import { AuthUtil } from '../utils/auth.util';
+import { TreeService } from './tree.service';
+import { SentryUtil } from '../utils/sentry.util';
 
 @Controller('tree')
 export class TreeController {
-  constructor(@inject(AuthUtil) private authService: AuthUtil,
-              @inject(TreeService) private treeService: TreeService) {
+  constructor(private authService: AuthUtil,
+              private treeService: TreeService) {
     this.initialize();
   }
 
