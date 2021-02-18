@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { CollectionUtil, QueryUtil } from '../../utils/query.util';
 
 @Injectable()
 export class QuestionDto {
-  constructor(@inject(QueryUtil) private query: QueryUtil) {}
+  constructor(private query: QueryUtil) {}
 
   async findQuestionById(objectId: string): Promise<Parse.Object> {
     const question = await this.query.findOne(CollectionUtil.Question, { where: { objectId }, option: { useMasterKey: true } });

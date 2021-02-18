@@ -1,14 +1,15 @@
 import { Injectable } from '@nestjs/common';
+import { QuestionDto } from './dto/question.dto';
 
 @Injectable()
 export class QuestionService {
-  constructor(@inject(QuestionModel) private questionModel: QuestionModel) {}
+  constructor(private questionDto: QuestionDto) {}
 
   async addQuestionIfRequireParamsExists(body: {[key: string]: any}): Promise<Parse.Object> {
     if (this.areRequiredParamsMissing(body)) {
       await Promise.reject(this.whichParamsAreMissing(body));
     }
-    return this.questionModel.createQuestionWithData(body);
+    return this.questionDto.createQuestionWithData(body);
   }
 
   areRequiredParamsMissing(body: {[key: string]: any}): boolean {
