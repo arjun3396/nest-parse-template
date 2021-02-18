@@ -1,10 +1,14 @@
 import { Controller } from '@nestjs/common';
+import { AuthUtil } from '../utils/auth.util';
+import { InstantCheckupService } from './instant-checkup.service';
+import { UserDto } from '../user/dto/user.dto';
+import { SentryUtil } from '../utils/sentry.util';
 
 @Controller('instant-checkup')
 export class InstantCheckupController {
-  constructor(@inject(AuthUtil) private authService: AuthUtil,
-              @inject(InstantCheckupService) private instantCheckupService: InstantCheckupService,
-              @inject(UserModel) private userModel: UserModel) {
+  constructor(private authService: AuthUtil,
+              private instantCheckupService: InstantCheckupService,
+              private userDto: UserDto) {
     this.initialize();
   }
 
@@ -23,7 +27,7 @@ export class InstantCheckupController {
         if (!userId) {
           await Promise.reject(new Error('userid is missing'));
         }
-        const result = this.userModel.findUserByUsername(userId, option);
+        const result = this.userDto.findUserByUsername(userId, option);
         return result;
       } catch (error) {
         await Promise.reject(new Error(error));

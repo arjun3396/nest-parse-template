@@ -1,10 +1,13 @@
 import { Injectable } from '@nestjs/common';
+import { InstantCheckupDto } from './dto/instant-checkup.dto';
+import { CollectionUtil, QueryUtil } from '../utils/query.util';
+import { StorageUtil } from '../utils/storage.util';
 
 @Injectable()
 export class InstantCheckupService {
-  constructor(@inject(InstantCheckupModel) private instantCheckupModel: InstantCheckupModel,
-              @inject(QueryUtil) private queryService: QueryUtil,
-              @inject(StorageUtil) private storageUtil: StorageUtil) {}
+  constructor(private instantCheckupDto: InstantCheckupDto,
+              private queryService: QueryUtil,
+              private storageUtil: StorageUtil) {}
 
   async saveInstantCheckup(user: Parse.User, instantCheckup: Parse.Cloud.Params): Promise<Parse.Object> {
     let instantCheckupObj: Parse.Object;
@@ -14,7 +17,7 @@ export class InstantCheckupService {
         _instantCheckup.userId = user.getUsername();
       }
       try {
-        instantCheckupObj = await this.instantCheckupModel.saveInstantCheckup(instantCheckup);
+        instantCheckupObj = await this.instantCheckupDto.saveInstantCheckup(instantCheckup);
       } catch (error) {
         await Promise.reject(error);
       }
@@ -28,7 +31,7 @@ export class InstantCheckupService {
     try {
       try {
         const where = { userId: user.get('username'), objectId: instantCheckupId };
-        const instantCheckupObjects = await this.instantCheckupModel.findInstantCheckups(where, option);
+        const instantCheckupObjects = await this.instantCheckupDto.findInstantCheckups(where, option);
         await instantCheckupObjects[0].destroy(option);
       } catch (error) {
         await Promise.reject(error);
@@ -48,7 +51,7 @@ export class InstantCheckupService {
         if (user) where.user = user;
       }
 
-      return this.instantCheckupModel.findInstantCheckups(where, option);
+      return this.instantCheckupDto.findInstantCheckups(where, option);
     } catch (error) {
       await Promise.reject(error);
     }

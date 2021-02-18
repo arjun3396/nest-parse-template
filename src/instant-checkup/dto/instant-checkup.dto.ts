@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { CollectionUtil, QueryUtil } from '../../utils/query.util';
 
 @Injectable()
 export class InstantCheckupDto {
-  constructor(@inject(QueryUtil) private queryService: QueryUtil) {}
+  constructor(private queryService: QueryUtil) {}
 
   async saveInstantCheckup(instantCheckup: { [key: string]: any }): Promise<Parse.Object> {
     const _instantCheckup = new CollectionUtil.InstantCheckup();
