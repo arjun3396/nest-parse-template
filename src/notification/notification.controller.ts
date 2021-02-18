@@ -1,9 +1,12 @@
 import { Controller } from '@nestjs/common';
+import { AuthUtil } from '../utils/auth.util';
+import { CollectionUtil, QueryUtil } from '../utils/query.util';
+import { SentryUtil } from '../utils/sentry.util';
 
 @Controller('notification')
 export class NotificationController {
-  constructor(@inject(AuthUtil) private authService: AuthUtil,
-              @inject(QueryUtil) private queryUtil: QueryUtil) {
+  constructor(private authService: AuthUtil,
+              private queryUtil: QueryUtil) {
     this.initialize();
   }
 
