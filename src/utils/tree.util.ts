@@ -1,11 +1,11 @@
-import { inject, injectable } from 'inversify';
 import { CollectionUtil } from './query.util';
-import { TypeNode, TypeTree } from '../types/type-tree';
 import { DB } from './db.util';
+import { Injectable } from '@nestjs/common';
+import { TypeNode, TypeTree } from '../../types/type-tree';
 
-@injectable()
+@Injectable()
 class Tree {
-  constructor(@inject(DB) private db: DB) {}
+  constructor(private db: DB) {}
 
   async initialize(): Promise<any> {
     const versions = ['v1'];

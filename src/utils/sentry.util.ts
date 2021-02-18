@@ -1,7 +1,7 @@
 import * as Sentry from '@sentry/node';
-import { version } from '../package.json';
-import { env } from '../config';
+import { version } from '../../package.json';
 import { DermtodoorError } from './dermtodoor-error.util';
+import { env } from '../../config';
 
 class SentryUtil {
   static Sentry: any = Sentry;

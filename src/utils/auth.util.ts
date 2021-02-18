@@ -1,9 +1,9 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import 'reflect-metadata';
-import { injectable } from 'inversify';
-import { ParseModelType } from '../types/parse-model';
+import { ParseModelType } from '../../types/parse-model';
+import { Injectable } from '@nestjs/common';
 
-@injectable()
+@Injectable()
 class AuthUtil {
   getMasterOption(option: Parse.FullOptions): Parse.FullOptions {
     const masterOption: Parse.FullOptions = { useMasterKey: true };

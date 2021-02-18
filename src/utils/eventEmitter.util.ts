@@ -1,7 +1,7 @@
-import { injectable } from 'inversify';
 import events from 'events';
+import { Injectable } from '@nestjs/common';
 
-@injectable()
+@Injectable()
 class EventEmitterUtil {
     private emitter;
 

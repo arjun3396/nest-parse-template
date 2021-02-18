@@ -1,8 +1,8 @@
-import { injectable } from 'inversify';
 import { Db, MongoClient } from 'mongodb';
-import { env } from '../config';
+import { env } from '../../config';
+import { Injectable } from '@nestjs/common';
 
-@injectable()
+@Injectable()
 class MongoDBConnection {
     private static DB_NAME: string = env.MONGODB_URI.split('?')[0].split('/').pop();
 

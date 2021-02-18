@@ -1,9 +1,8 @@
-import { inject, injectable } from 'inversify';
 import { MongoDBConnection } from './mongo-db-connection.util';
 
 @injectable()
 class DB {
-  constructor(@inject(MongoDBConnection) public mongoDBConnection: MongoDBConnection) {}
+  constructor(public mongoDBConnection: MongoDBConnection) {}
 
   async connect(): Promise<any> {
     await this.mongoDBConnection.connect();

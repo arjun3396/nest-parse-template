@@ -1,8 +1,8 @@
 import aws from 'aws-sdk';
-import { injectable } from 'inversify';
-import { env } from '../config';
+import { env } from '../../config';
+import { Injectable } from '@nestjs/common';
 
-@injectable()
+@Injectable()
 class StorageUtil {
   private _s3: any;
 
