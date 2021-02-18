@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { CollectionUtil, QueryUtil } from '../utils/query.util';
 
 @Injectable()
 export class MainConcernService {
-  constructor(@inject(QueryUtil) private queryUtil: QueryUtil) {}
+  constructor(private queryUtil: QueryUtil) {}
 
   async addMainConcern(concern: string, concernClass: string): Promise<{ [key: string]: any }> {
     const mainConcern = new CollectionUtil.MainConcern();

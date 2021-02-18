@@ -1,16 +1,15 @@
 import { inject, injectable } from 'inversify';
 import rp from 'request-promise';
 import download from 'download';
-import { ObjectID } from 'mongodb';
 import fs from 'fs';
 import schedule from 'node-schedule';
 import readline from 'readline';
 import _ from 'lodash';
 import { container } from '../loaders/inversify';
 import { EventEmitterUtil } from '../utils/eventEmitter.util';
-import { env } from '../config';
 import { MongoDBConnection } from '../utils/mongo-db-connection.util';
 import { SentryUtil } from '../utils/sentry.util';
+import { env } from '../../config';
 
 @injectable()
 class DumpDataJob {

@@ -1,9 +1,12 @@
 import { Controller } from '@nestjs/common';
+import { AuthUtil } from '../utils/auth.util';
+import { MainConcernService } from './main-concern.service';
+import { SentryUtil } from '../utils/sentry.util';
 
 @Controller('main-concern')
 export class MainConcernController {
-  constructor(@inject(AuthUtil) private authService: AuthUtil,
-              @inject(MainConcernService) private mainConcernService: MainConcernService) {
+  constructor(private authService: AuthUtil,
+              private mainConcernService: MainConcernService) {
     this.initialize();
   }
 
