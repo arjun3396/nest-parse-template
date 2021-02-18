@@ -1,14 +1,15 @@
 import { Injectable } from '@nestjs/common';
+import { HelpDto } from './dto/help.dto';
 
 @Injectable()
 export class HelpService {
-  constructor(@inject(HelpModel) private helpModel: HelpModel) {}
+  constructor(private helpDto: HelpDto) {}
 
   async addHelpIfRequireParamsExists(body: {[key: string]: any}, user: Parse.Object): Promise<Parse.Object> {
     if (this.areRequiredParamsMissing(body)) {
       return Promise.reject(this.whichParamsAreMissing(body));
     }
-    return this.helpModel.createHelpWithData(body, user);
+    return this.helpDto.createHelpWithData(body, user);
   }
 
   areRequiredParamsMissing(body: {[key: string]: any}): boolean {

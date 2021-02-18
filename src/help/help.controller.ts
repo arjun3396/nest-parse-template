@@ -1,9 +1,12 @@
 import { Controller } from '@nestjs/common';
+import { HelpService } from './help.service';
+import { AuthUtil } from '../utils/auth.util';
+import { SentryUtil } from '../utils/sentry.util';
 
 @Controller('help')
 export class HelpController {
-  constructor(@inject(AuthUtil) private authService: AuthUtil,
-              @inject(HelpService) private helpService: HelpService) {
+  constructor(private authService: AuthUtil,
+              private helpService: HelpService) {
     this.initialize();
   }
 
