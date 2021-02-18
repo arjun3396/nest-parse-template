@@ -1,8 +1,7 @@
-import { injectable } from 'inversify';
-// tslint:disable-next-line:no-import-side-effect
 import 'parse-server';
+import { Injectable } from '@nestjs/common';
 
-@injectable()
+@Injectable()
 class CollectionUtil {
   static User: new () => Parse.User = Parse.Object.extend('_User');
 
