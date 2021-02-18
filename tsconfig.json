@@ -1,16 +1,40 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "declaration": true,
-    "removeComments": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
+    "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "target": "es2017",
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
     "sourceMap": true,
+    "rootDir": "./",
+    "module": "commonjs",
     "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true,
-    "resolveJsonModule": true
+    "removeComments": false,
+    "target": "ES2019",
+    "skipLibCheck": true,
+    "moduleResolution": "node",
+    "lib": ["es2019", "dom"],
+    "esModuleInterop": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "typeRoots": ["./node_modules/@types/"],
+    "strict": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "strictFunctionTypes": false,
+    "noImplicitThis": false
+  },
+  "exclude": [
+    "node_modules",
+    "types",
+    "./setup.spec.ts",
+    "./server.spec.ts",
+    "**/*.js",
+    "app"
+  ],
+  "filesGlob": [],
+  "awesomeTypescriptLoaderOptions": {
+    "resolveGlobs": true,
+    "forkChecker": true
   }
 }
