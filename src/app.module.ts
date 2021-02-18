@@ -14,9 +14,12 @@ import { InstantCheckupModule } from './instant-checkup/instant-checkup.module';
 import { HelpModule } from './help/help.module';
 import { FavouriteModule } from './favourite/favourite.module';
 import { CheckoutModule } from './checkout/checkout.module';
+import { UserResponseModule } from './user-response/user-response.module';
+import { PurchaseHistoryModule } from './purchase-history/purchase-history.module';
+import { ConsultationSessionModule } from './consultation-session/consultation-session.module';
 
 @Module({
-  imports: [UserModule, TreeModule, QuestionModule, ProductTypeModule, ProductModule, ProductBrandModule, OrderModule, NotificationModule, MainConcernModule, InstantCheckupModule, HelpModule, FavouriteModule, CheckoutModule],
+  imports: [UserModule, TreeModule, QuestionModule, ProductTypeModule, ProductModule, ProductBrandModule, OrderModule, NotificationModule, MainConcernModule, InstantCheckupModule, HelpModule, FavouriteModule, CheckoutModule, UserResponseModule, PurchaseHistoryModule, ConsultationSessionModule],
   controllers: [ParseServerController],
   providers: [QueryService],
 })
