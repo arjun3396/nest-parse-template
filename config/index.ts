@@ -4,7 +4,7 @@ import * as path from 'path';
 import { EnvType } from '../types';
 
 const root = path.normalize(`${__dirname}/..`);
-const envFile = process.env.NODE_ENV === 'test' ? path.join(root, 'default.env') : path.join(root, '.env');
+const envFile = process.env.NODE_ENV === 'test' ? path.join(root, '../default.env') : path.join(root, '../.env');
 const setupCompleted = fs.existsSync(envFile);
 if (!setupCompleted && process.env.NODE_ENV !== 'test') {
   fs.writeFileSync(envFile, '');
@@ -42,6 +42,10 @@ const env: EnvType.EnvJson = {
   MASTER_KEY: rawEnv.MASTER_KEY,
   ...process.env,
 };
+
+if (env.NODE_ENV === 'test') {
+  env.EVENT_SCHEDULER_SENDING = 'true';
+}
 
 // Set default node environment to development
 process.env.NODE_ENV = process.env.NODE_ENV || 'development';

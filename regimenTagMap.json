@@ -1,0 +1,1142 @@
+{
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R2-RX",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R2-RX",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R2-RX",
+
+  "Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R2-RX",
+  "Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R2-RX",
+  "Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R2-RX",
+
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R2-P-RX",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R2-P-RX",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R2-P-RX",
+
+  "Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R3-RX",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R3-RX",
+
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R3-P-RX",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R3-P",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R3-P",
+
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R2-P",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R2-P",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R2-P",
+
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R2-P",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R2-P",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R2-P",
+
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R2",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R2",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R2",
+
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R2",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R2",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R2",
+
+  "Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R2",
+  "Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R2",
+  "Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R2",
+
+  "Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R2",
+  "Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R2",
+  "Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R2",
+
+  "Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R3",
+  "Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R3",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R3",
+  "Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R3",
+
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R4-RX",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R4-RX",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R4-RX",
+
+  "Acne_Scars_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R4-RX",
+  "Acne_Scars_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R4-RX",
+  "Acne_Scars_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R4-RX",
+
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R4-P-RX",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R4-P-RX",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R4-P-RX",
+
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R4-P",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R4-P",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R4-P",
+
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R4-P",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R4-P",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R4-P",
+
+
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R4",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R4",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R4",
+
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R4",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R4",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R4",
+
+  "Acne_Scars_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R4",
+  "Acne_Scars_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R4",
+  "Acne_Scars_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R4",
+
+  "Acne_Scars_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R4",
+  "Acne_Scars_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R4",
+  "Acne_Scars_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R4",
+
+  "Acne_Scars_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R5-RX",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R5-RX",
+
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R5-P-RX",
+
+  "Acne_Scars_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R5",
+  "Acne_Scars_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R5",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R5",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R5",
+
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R5-P",
+  "Acne_Scars_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R5-P",
+
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R6-RX",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R6-RX",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R6-RX",
+
+  "Age_Spots_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R6-RX",
+  "Age_Spots_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R6-RX",
+  "Age_Spots_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R6-RX",
+
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R6-P-RX",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R6-P-RX",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R6-P-RX",
+
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R6-P",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R6-P",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R6-P",
+
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R6-P",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R6-P",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R6-P",
+
+
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R6",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R6",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R6",
+
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R6",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R6",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R6",
+
+  "Age_Spots_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R6",
+  "Age_Spots_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R6",
+  "Age_Spots_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R6",
+
+  "Age_Spots_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R6",
+  "Age_Spots_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R6",
+  "Age_Spots_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R6",
+
+  "Age_Spots_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R7-RX",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R7-RX",
+
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R7-P-RX",
+
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R7-P",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R7-P",
+
+  "Age_Spots_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R7",
+  "Age_Spots_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R7",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R7",
+  "Age_Spots_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R7",
+
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R8-RX",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R8-RX",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R8-RX",
+
+  "Melasma_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R8-RX",
+  "Melasma_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R8-RX",
+  "Melasma_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R8-RX",
+
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R8-P-RX",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R8-P-RX",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R8-P-RX",
+
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R8",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R8",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R8",
+
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R8",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R8",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R8",
+
+  "Melasma_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R8",
+  "Melasma_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R8",
+  "Melasma_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R8",
+
+  "Melasma_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R8",
+  "Melasma_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R8",
+  "Melasma_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R8",
+
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R8-P",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R8-P",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R8-P",
+
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R8-P",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R8-P",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R8-P",
+
+  "Melasma_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R9-RX",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R9-RX",
+
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R9-P-RX",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R9-P",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R9-P",
+
+  "Melasma_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R9",
+  "Melasma_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R9",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R9",
+  "Melasma_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R9",
+
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R10-RX",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R10-RX",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R10-RX",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R10-RX",
+
+  "Rosacea_Redness_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R10-RX",
+  "Rosacea_Redness_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R10-RX",
+  "Rosacea_Redness_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R10-RX",
+  "Rosacea_Redness_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R10-RX",
+
+  "Rosacea_Redness_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R10",
+  "Rosacea_Redness_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R10",
+  "Rosacea_Redness_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R10",
+  "Rosacea_Redness_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R10",
+
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R10",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R10",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R10",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R10",
+
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R10",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R10",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R10",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R10",
+
+  "Rosacea_Redness_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R10",
+  "Rosacea_Redness_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R10",
+  "Rosacea_Redness_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R10",
+  "Rosacea_Redness_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R10",
+
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R10-P-RX",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R10-P-RX",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R10-P-RX",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R10-P-RX",
+
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R10-P",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R10-P",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R10-P",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R10-P",
+
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R10-P",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R10-P",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R10-P",
+  "Rosacea_Redness_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R10-P",
+
+  "Eye_Dark_Circles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R11",
+
+  "Eye_Dark_Circles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R11",
+
+  "Eye_Dark_Circles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R11",
+
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R11",
+
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R11",
+
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R11",
+
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R11",
+
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R11",
+
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R11",
+  "Eye_Dark_Circles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R11",
+
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R12",
+
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R12",
+
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R12",
+
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R12",
+
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R12",
+
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R12",
+
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R12",
+
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R12",
+
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R12",
+  "Eye_Under_Eye_Bags_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R12",
+
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R14",
+
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R14",
+
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R14",
+
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R14",
+
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R13-P",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R13-P",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R13-P",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R14-P",
+
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R14",
+
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R13-P",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R13-P",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R13-P",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R14-P",
+
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R13",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R14",
+
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R13-P",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R13-P",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R13-P",
+  "Wrinkles_Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R14-P",
+
+  "Dry_Sensitive_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R15",
+
+  "Dry_Sensitive_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R15",
+
+  "Dry_Sensitive_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R15",
+
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R15",
+
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R15",
+
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R15",
+
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R15",
+
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R15",
+
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R15",
+  "Dry_Sensitive_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R15",
+
+  "Wrinkles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R16",
+  "Wrinkles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R16",
+  "Wrinkles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R16",
+  "Wrinkles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R16",
+
+  "Wrinkles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R16",
+  "Wrinkles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R16",
+  "Wrinkles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R16",
+  "Wrinkles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R16",
+
+  "Wrinkles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R16",
+  "Wrinkles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R16",
+  "Wrinkles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R16",
+  "Wrinkles_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R16",
+
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R16",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R16",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R16",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R16",
+
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R16",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R16",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R16",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R16",
+
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R16",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R16",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R16",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R16",
+
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R16-P",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R16-P",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R16-P",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R16-P",
+
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R16-P",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R16-P",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R16-P",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R16-P",
+
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R16-P",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R16-P",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R16-P",
+  "Wrinkles_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R16-P",
+
+  "Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R17",
+  "Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R17",
+  "Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R17",
+  "Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R17",
+
+  "Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R17",
+  "Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R17",
+  "Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R17",
+  "Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R17",
+
+  "Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R17",
+  "Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R17",
+  "Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R17",
+  "Loose_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R17",
+
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R17",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R17",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R17",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R17",
+
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R17",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R17",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R17",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R17",
+
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R17",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R17",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R17",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R17",
+
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R17-P",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R17-P",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R17-P",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R17-P",
+
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R17-P",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R17-P",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R17-P",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R17-P",
+
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R17-P",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R17-P",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R17-P",
+  "Loose_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R17-P",
+
+  "Sun_Damage_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R18",
+  "Sun_Damage_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R18",
+  "Sun_Damage_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R18",
+  "Sun_Damage_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R18",
+
+  "Sun_Damage_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R18",
+  "Sun_Damage_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R18",
+  "Sun_Damage_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R18",
+  "Sun_Damage_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R18",
+
+  "Sun_Damage_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R18",
+  "Sun_Damage_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R18",
+  "Sun_Damage_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R18",
+  "Sun_Damage_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R18",
+
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R18",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R18",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R18",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R18",
+
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R18",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R18",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R18",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R18",
+
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R18",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R18",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R18",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R18",
+
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R18-P",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R18-P",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R18-P",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R18-P",
+
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R18-P",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R18-P",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R18-P",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R18-P",
+
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R18-P",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R18-P",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R18-P",
+  "Sun_Damage_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R18-P",
+
+  "Itchy_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R21",
+  "Itchy_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R21",
+  "Itchy_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R21",
+  "Itchy_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R21",
+
+  "Itchy_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R21",
+  "Itchy_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R21",
+  "Itchy_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R21",
+  "Itchy_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R21",
+
+  "Itchy_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R21-RX",
+  "Itchy_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R21-RX",
+  "Itchy_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R21-RX",
+  "Itchy_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R21-RX",
+
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R20",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R20",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R20",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R20",
+
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R20",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R20",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R20",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R20",
+
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R20-RX",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R20-RX",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R20-RX",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R20-RX",
+
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R20-P",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R20-P",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R20-P",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R20-P",
+
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R20-P",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R20-P",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R20-P",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R20-P",
+
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R20-P-RX",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R20-P-RX",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R20-P-RX",
+  "Itchy_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R20-P-RX",
+
+  "Flaky_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R23",
+  "Flaky_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R23",
+  "Flaky_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R23",
+  "Flaky_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R23",
+
+  "Flaky_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R23",
+  "Flaky_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R23",
+  "Flaky_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R23",
+  "Flaky_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R23",
+
+  "Flaky_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R23-RX",
+  "Flaky_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R23-RX",
+  "Flaky_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R23-RX",
+  "Flaky_Scalp_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R23-RX",
+
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R22",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R22",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R22",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R22",
+
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R22",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R22",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R22",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R22",
+
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R22-RX",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R22-RX",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R22-RX",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R22-RX",
+
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R22-P",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R22-P",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R22-P",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R22-P",
+
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R22-P",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R22-P",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R22-P",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R22-P",
+
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R22-P-RX",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R22-P-RX",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R22-P-RX",
+  "Flaky_Scalp_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R22-P-RX",
+
+  "Back_Chest_Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R30",
+
+  "Back_Chest_Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R30",
+
+  "Back_Chest_Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R30",
+
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R30",
+
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R30",
+
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R30",
+
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R30",
+
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R30",
+
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R30",
+  "Back_Chest_Acne_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R30",
+
+  "Large_Pores_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R1",
+  "Large_Pores_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R1",
+  "Large_Pores_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R1",
+  "Large_Pores_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R1",
+
+  "Large_Pores_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R1",
+
+  "Large_Pores_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R1",
+
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R1",
+
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R1",
+
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R1",
+
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R1",
+
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R1",
+
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R1",
+  "Large_Pores_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R1",
+
+  "Shaving_Bumps_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R25",
+
+  "Shaving_Bumps_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R25",
+
+  "Shaving_Bumps_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R25",
+
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R25",
+
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R25",
+
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R25",
+
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R25",
+
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R25",
+
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R25",
+  "Shaving_Bumps_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R25",
+
+  "Keratosis_Pilaris_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R27",
+
+  "Keratosis_Pilaris_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R27",
+
+  "Keratosis_Pilaris_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R27",
+
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R27",
+
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R27",
+
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R27",
+
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R27",
+
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R27",
+
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R27",
+  "Keratosis_Pilaris_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R27",
+
+  "Rash_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R28",
+  "Rash_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R28",
+  "Rash_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R28",
+  "Rash_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R28",
+
+  "Rash_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R28",
+  "Rash_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R28",
+  "Rash_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R28",
+  "Rash_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R28",
+
+  "Rash_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R28",
+  "Rash_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R28",
+  "Rash_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R28",
+  "Rash_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R28",
+
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R28",
+
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R28",
+
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R28",
+
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R28",
+
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R28",
+
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R28",
+  "Rash_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R28",
+
+  "Athletes_Foot_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R29",
+  "Athletes_Foot_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R29",
+  "Athletes_Foot_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R29",
+  "Athletes_Foot_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R29",
+
+  "Athletes_Foot_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R29",
+  "Athletes_Foot_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R29",
+  "Athletes_Foot_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R29",
+  "Athletes_Foot_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R29",
+
+  "Athletes_Foot_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R29",
+  "Athletes_Foot_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R29",
+  "Athletes_Foot_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R29",
+  "Athletes_Foot_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R29",
+
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R29",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R29",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R29",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R29",
+
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R29-P",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R29-P",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R29-P",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R29-P",
+
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R29",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R29",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R29",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R29",
+
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R29-P",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R29-P",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R29-P",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R29-P",
+
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R29",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R29",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R29",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R29",
+
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R29-P",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R29-P",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R29-P",
+  "Athletes_Foot_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R29-P",
+
+  "Toe_Nail_Fungus_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R33",
+
+  "Toe_Nail_Fungus_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R33",
+
+  "Toe_Nail_Fungus_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R33",
+
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R33",
+
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R33",
+
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R33",
+
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R33",
+
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R33",
+
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R33",
+  "Toe_Nail_Fungus_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R33",
+
+  "Itchy_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R31",
+  "Itchy_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R31",
+  "Itchy_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R31",
+  "Itchy_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R31",
+
+  "Itchy_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R31",
+
+  "Itchy_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R31",
+
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R31",
+
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R31",
+
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R31",
+
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R31",
+
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R31",
+
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R31",
+  "Itchy_Skin_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R31",
+
+  "Jock_Itch_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R32",
+  "Jock_Itch_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R32",
+  "Jock_Itch_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R32",
+  "Jock_Itch_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R32",
+
+  "Jock_Itch_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R32",
+
+  "Jock_Itch_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R32",
+
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R32",
+
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R32",
+
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R32",
+
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R32",
+
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R32",
+
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R32",
+  "Jock_Itch_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R32",
+
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R19",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R19",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R19",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R19",
+
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R19",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R19",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R19",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R19",
+
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R19-RX",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R19-RX",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R19-RX",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R19-RX",
+
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R24",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R24",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R24",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R24",
+
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R24-P",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R24-P",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R24-P",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R24-P",
+
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24",
+
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24-P",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24-P",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24-P",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24-P",
+
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-RX",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-RX",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-RX",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-RX",
+
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-P-RX",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-P-RX",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-P-RX",
+  "Hair_Loss_Gradual_Thinning_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-P-RX",
+
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R24",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R24",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R24",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R24",
+
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R24-P",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R24-P",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R24-P",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R24-P",
+
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24",
+
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24-P",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24-P",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24-P",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R24-P",
+
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-RX",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-RX",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-RX",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^No_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-RX",
+
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-P-RX",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-P-RX",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-P-RX",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^CONTINUE_Pregnancy^Yes_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R24-P-RX",
+
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R34",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^SKIP":"R34",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R34",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^SKIP":"R34",
+
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R34",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R34",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R34",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Non-Rx":"R34",
+
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R34",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^Yes_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R34",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^Yes_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R34",
+  "Hair_Loss_Rapid_Shedding_ANY_ANY_gender^SKIP_ANY_ANY_Sensitive^No_allergicToFollowing^No_ANY_ANY_StateResidence^CONTINUE_RxOrNonRx^Rx":"R34"
+}

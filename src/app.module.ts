@@ -17,9 +17,10 @@ import { CheckoutModule } from './checkout/checkout.module';
 import { UserResponseModule } from './user-response/user-response.module';
 import { PurchaseHistoryModule } from './purchase-history/purchase-history.module';
 import { ConsultationSessionModule } from './consultation-session/consultation-session.module';
+import { UtilsModule } from './utils/utils.module';
 
 @Module({
-  imports: [UserModule, TreeModule, QuestionModule, ProductTypeModule, ProductModule, ProductBrandModule, OrderModule, NotificationModule, MainConcernModule, InstantCheckupModule, HelpModule, FavouriteModule, CheckoutModule, UserResponseModule, PurchaseHistoryModule, ConsultationSessionModule],
+  imports: [UserModule, TreeModule, QuestionModule, ProductTypeModule, ProductModule, ProductBrandModule, OrderModule, NotificationModule, MainConcernModule, InstantCheckupModule, HelpModule, FavouriteModule, CheckoutModule, UserResponseModule, PurchaseHistoryModule, ConsultationSessionModule, UtilsModule],
   controllers: [ParseServerController],
   providers: [QueryService],
 })

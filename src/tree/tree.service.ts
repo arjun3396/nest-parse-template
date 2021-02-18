@@ -10,7 +10,7 @@ import { QuestionDto } from '../question/dto/question.dto';
 import { UserDto } from '../user/dto/user.dto';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
-const regimenMap = require('../regimenTagMap');
+// const regimenMap = require('../../regimenTagMap.json');
 
 @Injectable()
 export class TreeService {
@@ -110,6 +110,7 @@ export class TreeService {
     allUserResponse.forEach((response: Parse.Object) => evaluatedResponse.push(response.get('evaluatedAnswer')));
     const evaluatedResponseString = evaluatedResponse.join('_');
     const key = [concern, evaluatedResponseString].join('_');
-    return regimenMap[key] as string;
+    // return regimenMap[key] as string;
+    return 'tempString';
   }
 }
