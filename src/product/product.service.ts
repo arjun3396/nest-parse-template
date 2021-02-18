@@ -1,11 +1,15 @@
 import { Injectable } from '@nestjs/common';
+import { QueryUtil } from '../utils/query.util';
+import { ProductDto } from './dto/product.dto';
+import { CheckoutService } from '../checkout/checkout.service';
+import { FavouriteService } from '../favourite/favourite.service';
 
 @Injectable()
 export class ProductService {
-  constructor(@inject(QueryUtil) private queryUtil: QueryUtil,
-              @inject(ProductModel) private productModel: ProductModel,
-              @inject(CheckoutService) private checkoutService: CheckoutService,
-              @inject(FavouriteService) private favoriteService: FavouriteService) {}
+  constructor(private queryUtil: QueryUtil,
+              private productDto: ProductDto,
+              private checkoutService: CheckoutService,
+              private favoriteService: FavouriteService) {}
 
   checkIfAddedToCheckout(result: Array<{[key: string]: any }>, checkout: { [key: string]: any }): any {
     if (checkout.lineItems.length) {
@@ -45,7 +49,7 @@ export class ProductService {
   }
 
   async getProductById(objectId: string, user: Parse.Object, option: Parse.FullOptions): Promise<Array<{[key: string]: any}>> {
-    const result: Parse.Object = await this.productModel.findById(objectId, option);
+    const result: Parse.Object = await this.productDto.findById(objectId, option);
     if (!result) { await Promise.reject(new Error(`No product found with objectId: ${objectId}`)); }
     let resultJSON: Array<{[key: string]: any }> = [result].map((product) => JSON.parse(JSON.stringify(product)) as {[key: string]: any });
     const checkout: {[key: string]: any } = await this.checkoutService.getCheckout(user, option);
@@ -64,7 +68,7 @@ export class ProductService {
   }
 
   async getProductsByType(productType: string, user: Parse.Object, option: Parse.FullOptions): Promise<Array<{ [key: string]: any }>> {
-    const result: Array<Parse.Object> = await this.productModel.findByType(productType, option);
+    const result: Array<Parse.Object> = await this.productDto.findByType(productType, option);
     if (!result.length) { await Promise.reject(new Error(`No product found with type: ${productType}`)); }
     let resultJSON: Array<{ [key: string]: any }> = result.map((product) => JSON.parse(JSON.stringify(product)) as { [key: string]: any });
     const checkout = await this.checkoutService.getCheckout(user, option);
@@ -75,7 +79,7 @@ export class ProductService {
   }
 
   async getProductsByTag(tag: string, user: Parse.Object, option: Parse.FullOptions, limit?: number): Promise<Array<{[key: string]: any}>> {
-    const result: Array<Parse.Object> = await this.productModel.findByTags([tag], option, limit);
+    const result: Array<Parse.Object> = await this.productDto.findByTags([tag], option, limit);
     if (!result.length) { await Promise.reject(new Error(`No product found with tag: ${tag}`)); }
     let resultJSON: Array<{[key: string]: any}> = result.map((product) => JSON.parse(JSON.stringify(product)) as { [key: string]: any });
     const checkout = await this.checkoutService.getCheckout(user, option);
@@ -87,7 +91,7 @@ export class ProductService {
 
   async getProductsByTitle(title: string, user: Parse.Object, option: Parse.FullOptions, limit?: number)
     : Promise<Array<{[key: string]: any}>> {
-    const result: Array<Parse.Object> = await this.productModel.findByTitle(title, option, limit);
+    const result: Array<Parse.Object> = await this.productDto.findByTitle(title, option, limit);
     if (!result.length) { await Promise.reject(new Error(`No product found with name: ${title}`)); }
     let resultJSON: Array<{[key: string]: any}> = result.map((product) => JSON.parse(JSON.stringify(product)) as { [key: string]: any });
     const checkout = await this.checkoutService.getCheckout(user, option);
@@ -98,7 +102,7 @@ export class ProductService {
   }
 
   async getProductsByTagForTreeResponse(tag: string): Promise<Array<{[key: string]: any}>> {
-    const result: Array<Parse.Object> = await this.productModel.findByTagsForTree([tag], { useMasterKey: true });
+    const result: Array<Parse.Object> = await this.productDto.findByTagsForTree([tag], { useMasterKey: true });
     if (!result.length) { await Promise.reject(new Error(`No product found with tag: ${tag}`)); }
     const resultJSON: Array<{[key: string]: any}> = result.map((product) => JSON.parse(JSON.stringify(product)) as { [key: string]: any });
     return resultJSON;

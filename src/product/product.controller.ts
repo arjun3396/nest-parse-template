@@ -1,10 +1,14 @@
 import { Controller } from '@nestjs/common';
+import { ProductService } from './product.service';
+import { EventEmitterUtil } from '../utils/eventEmitter.util';
+import { AuthUtil } from '../utils/auth.util';
+import { SentryUtil } from '../utils/sentry.util';
 
 @Controller('product')
 export class ProductController {
-  constructor(@inject(AuthUtil) private authService: AuthUtil,
-              @inject(EventEmitterUtil) private eventEmitterUtil: EventEmitterUtil,
-              @inject(ProductService) private productService: ProductService) {
+  constructor(private authService: AuthUtil,
+              private eventEmitterUtil: EventEmitterUtil,
+              private productService: ProductService) {
     this.initialize();
   }
 
