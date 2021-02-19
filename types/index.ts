@@ -1,4 +1,5 @@
 // <reference path="../index.d.ts" />
+// eslint-disable-next-line @typescript-eslint/no-namespace
 declare namespace EnvType {
   interface AwsConfig {
     accessKeyId: string;
@@ -41,4 +42,5 @@ declare namespace EnvType {
   }
 }
 
+// @ts-ignore
 export { EnvType };
