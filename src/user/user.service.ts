@@ -95,8 +95,8 @@ export class UserService {
     return this.queryUtil.findOne(CollectionUtil.User, { where: { objectId: _user.id }, option });
   }
 
-  async fetchUser(user: Parse.Object, field: string, option: Parse.FullOptions): Promise<Parse.Object> {
-    return this.queryUtil.fetchObject(user, field, option);
+  async fetchUser(user: Parse.Object, option: Parse.FullOptions): Promise<Parse.Object> {
+    return this.userDto.fetchUser(user, option);
   }
 
   async validateToken(userId: string, option: Parse.FullOptions): Promise<Parse.Object> {
