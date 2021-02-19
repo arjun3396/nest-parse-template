@@ -1,5 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import { UserDto } from '../user/dto/user.dto';
 import { OrderDto } from './dto/order.dto';
 import { ProductDto } from '../product/dto/product.dto';
 import { FavouriteService } from '../favourite/favourite.service';
