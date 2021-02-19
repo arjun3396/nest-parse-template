@@ -1,5 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { QuestionDto } from './dto/question.dto';
+import { CollectionUtil } from '../utils/collection.util';
 
 @Injectable()
 export class QuestionService {
@@ -26,5 +27,9 @@ export class QuestionService {
       }
     });
     return missingParams;
+  }
+
+  async findQuestionById(objectId: string): Promise<Parse.Object> {
+    return this.questionDto.findQuestionById(objectId);
   }
 }
