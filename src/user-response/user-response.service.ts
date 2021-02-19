@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { UserResponseDto } from './dto/user-response.dto';
-import { QueryUtil } from '../utils/query.util';
+import { CollectionUtil, QueryUtil } from '../utils/query.util';
 
 @Injectable()
 export class UserResponseService {
@@ -65,5 +65,10 @@ export class UserResponseService {
 
   async getAllUserResponse(user: Parse.Object): Promise<Array<Parse.Object>> {
     return this.userResponseDto.findAllUserResponse(user);
+  }
+
+  async archiveUserResponse(user: Parse.Object, option: Parse.FullOptions)
+    : Promise<any> {
+    return this.userResponseDto.archiveUserResponse(user, option);
   }
 }

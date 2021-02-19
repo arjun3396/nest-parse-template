@@ -102,4 +102,8 @@ export class UserService {
   async validateToken(userId: string, option: Parse.FullOptions): Promise<Parse.Object> {
     return this.userDto.findUserByUsername(userId, option);
   }
+
+  async findUserById(userId: string): Promise<any> {
+    return this.userDto.findUserById(userId);
+  }
 }
