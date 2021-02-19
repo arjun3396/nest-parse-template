@@ -1,6 +1,5 @@
 import { Injectable } from '@nestjs/common';
 import { OrderDto } from './dto/order.dto';
-import { ProductDto } from '../product/dto/product.dto';
 import { FavouriteService } from '../favourite/favourite.service';
 import { CheckoutService } from '../checkout/checkout.service';
 import { ProductService } from '../product/product.service';
@@ -8,12 +7,10 @@ import { PurchaseHistoryService } from '../purchase-history/purchase-history.ser
 import { env } from '../../config';
 import rp from 'request-promise';
 import _ from 'lodash';
-import { CollectionUtil } from '../utils/collection.util';
 
 @Injectable()
 export class OrderService {
   constructor(private orderDto: OrderDto,
-              private productDto: ProductDto,
               private productService: ProductService,
               private checkoutService: CheckoutService,
               private favouriteServer: FavouriteService,
@@ -64,7 +61,7 @@ export class OrderService {
     const purchaseEntries = [];
     for (let i = 0; i < lineItems.length; i += 1) {
       // eslint-disable-next-line no-await-in-loop
-      const item = await this.productDto.findById(lineItems[i].product_id.toString(), option);
+      const item = await this.productService.findById(lineItems[i].product_id.toString(), option);
       lineItemsCopy[i].product_id = lineItemsCopy[i].product_id.toString();
       lineItems[i] = item;
       purchaseEntries.push(this.purchaseHistoryService.addPurchaseEntry(user, item));

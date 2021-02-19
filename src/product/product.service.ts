@@ -111,4 +111,8 @@ export class ProductService {
   async findByVariantId(variantId: string, option: Parse.FullOptions): Promise<Parse.Object> {
     return this.productDto.findByVariantId(variantId, option)
   }
+
+  async findById(objectId: string, option: Parse.FullOptions): Promise<Parse.Object> {
+    return this.productDto.findById(objectId, option);
+  }
 }
