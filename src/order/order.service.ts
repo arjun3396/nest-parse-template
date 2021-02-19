@@ -8,6 +8,7 @@ import { PurchaseHistoryService } from '../purchase-history/purchase-history.ser
 import { env } from '../../config';
 import rp from 'request-promise';
 import _ from 'lodash';
+import { CollectionUtil } from '../utils/collection.util';
 
 @Injectable()
 export class OrderService {
@@ -94,5 +95,9 @@ export class OrderService {
     const order = await this.orderDto.getOrder(_orderDetails.id, option);
     if (!order) { return { status: 'success', message: 'not an app order' }; }
     return order.save({ canceled: true }, option);
+  }
+
+  async getOrder(orderId: string, option: Parse.FullOptions): Promise<Parse.Object> {
+    return this.orderDto.getOrder(orderId, option);
   }
 }

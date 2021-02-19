@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import { QueryUtil } from '../utils/query.util';
+import { CollectionUtil, QueryUtil } from '../utils/query.util';
 import { ProductDto } from './dto/product.dto';
 import { CheckoutService } from '../checkout/checkout.service';
 import { FavouriteService } from '../favourite/favourite.service';
@@ -106,5 +106,9 @@ export class ProductService {
     if (!result.length) { await Promise.reject(new Error(`No product found with tag: ${tag}`)); }
     const resultJSON: Array<{[key: string]: any}> = result.map((product) => JSON.parse(JSON.stringify(product)) as { [key: string]: any });
     return resultJSON;
+  }
+
+  async findByVariantId(variantId: string, option: Parse.FullOptions): Promise<Parse.Object> {
+    return this.productDto.findByVariantId(variantId, option)
   }
 }

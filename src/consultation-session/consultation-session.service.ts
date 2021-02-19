@@ -23,4 +23,13 @@ export class ConsultationSessionService {
       .createConsultationSession(mainConcern.get('name'), mainConcern.get('class'), _user, option);
     return { status: 'success', consultationSessionId: consultationSession.id };
   }
+
+  async archiveConsultationsIfAny(user: Parse.Object, option: Parse.FullOptions)
+    : Promise<any> {
+    return this.consultationSessionDto.archiveConsultationsIfAny(user, option);
+  }
+
+  async findConsultationSession(user: Parse.Object, option: Parse.FullOptions): Promise<Parse.Object> {
+    return this.consultationSessionDto.findConsultationSession(user, option);
+  }
 }

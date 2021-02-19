@@ -1,26 +1,26 @@
 import { Injectable } from '@nestjs/common';
-import { OrderDto } from '../order/dto/order.dto';
-import { ConsultationSessionDto } from '../consultation-session/dto/consultation-session.dto';
-import { ProductDto } from '../product/dto/product.dto';
 import { CheckoutDto } from './dto/checkout.dto';
 import moment from 'moment';
 import _ from 'lodash';
 import { env } from '../../config';
 import rp from 'request-promise';
 import { QueryUtil } from '../utils/query.util';
+import { ConsultationSessionService } from '../consultation-session/consultation-session.service';
+import { ProductService } from '../product/product.service';
+import { OrderService } from '../order/order.service';
 
 @Injectable()
 export class CheckoutService {
-  constructor(private orderDto: OrderDto,
-              private consultationSessionDto: ConsultationSessionDto,
-              private productDto: ProductDto,
-              private checkoutDto: CheckoutDto,
-              private queryUtil: QueryUtil) {}
+  constructor(private checkoutDto: CheckoutDto,
+              private queryUtil: QueryUtil,
+              private consultationSessionService: ConsultationSessionService,
+              private productService: ProductService,
+              private orderService: OrderService) {}
 
   async clearCheckout(user: Parse.Object, option: Parse.FullOptions): Promise<{ [key: string]: any }> {
     const _user = await this.queryUtil.fetchObject(user, 'username', option);
     const checkout = await this.createCheckout(_user);
-    await this.consultationSessionDto.archiveConsultationsIfAny(_user, option);
+    await this.consultationSessionService.archiveConsultationsIfAny(_user, option);
     _user.set('checkoutId', checkout.checkoutId);
     _user.set('checkoutToken', atob(checkout.checkoutId).split('/')[4].split('?')[0]);
     _user.set('checkoutUpdatedAt', moment().toDate());
@@ -56,7 +56,7 @@ export class CheckoutService {
     if (lineItems.length && variant) {
       variant.quantity += quantity || 1;
     } else {
-      const product = await this.productDto.findByVariantId(variantId, option);
+      const product = await this.productService.findByVariantId(variantId, option);
       variant = _.find(product.get('variants'), { storefrontId: variantId });
       variant.quantity = quantity || 1;
       lineItems.push(variant);
@@ -75,7 +75,7 @@ export class CheckoutService {
     if (lineItems.length && variant) {
       variant.quantity += quantity || 1;
     } else {
-      const product = await this.productDto.findByVariantId(variantId, option);
+      const product = await this.productService.findByVariantId(variantId, option);
       variant = _.find(product.get('variants'), { storefrontId: variantId });
       variant.quantity = quantity || 1;
       lineItems.push(variant);
@@ -100,7 +100,7 @@ export class CheckoutService {
       if (!variant.quantity) {
         _.remove(lineItems, (item) => item.storefrontId === variantId);
         if (variant.addedByTree) {
-          await this.consultationSessionDto.archiveConsultationsIfAny(user, option);
+          await this.consultationSessionService.archiveConsultationsIfAny(user, option);
         }
       }
     }
@@ -119,7 +119,7 @@ export class CheckoutService {
       if (!variant.quantity) {
         _.remove(lineItems, (item) => item.storefrontId === variantId);
         if (variant.addedByTree) {
-          await this.consultationSessionDto.archiveConsultationsIfAny(user, option);
+          await this.consultationSessionService.archiveConsultationsIfAny(user, option);
         }
       }
     }
@@ -148,7 +148,7 @@ export class CheckoutService {
 
   async addProductsSuggestByTreeToCheckout(products: Array<{[key: string]: any}>, user: Parse.Object, option: Parse.FullOptions)
     : Promise<any> {
-    const consultationSession = await this.consultationSessionDto.findConsultationSession(user, option);
+    const consultationSession = await this.consultationSessionService.findConsultationSession(user, option);
     let isRxRegimen = false;
     if (consultationSession && consultationSession.get('regimenTag') && consultationSession.get('regimenTag').includes('RX')) {
       isRxRegimen = true;
@@ -200,7 +200,7 @@ export class CheckoutService {
       return Promise.reject(new Error('Missing required params: orderId'));
     }
 
-    const order = await this.orderDto.getOrder(orderId, option);
+    const order = await this.orderService.getOrder(orderId, option);
     if (!order) {
       return Promise.reject(new Error(`No order found with orderId: ${orderId}`));
     }
