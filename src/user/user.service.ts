@@ -5,15 +5,19 @@ import { OrderDto } from '../order/dto/order.dto';
 import { CheckoutDto } from '../checkout/dto/checkout.dto';
 import { CollectionUtil, QueryUtil } from '../utils/query.util';
 import { UserDto } from './dto/user.dto';
+import { CheckoutService } from '../checkout/checkout.service';
+import { OrderService } from '../order/order.service';
+import { InstantCheckupService } from '../instant-checkup/instant-checkup.service';
+import { FavouriteService } from '../favourite/favourite.service';
 
 @Injectable()
 export class UserService {
   constructor(private userDto: UserDto,
               private queryUtil: QueryUtil,
-              private checkoutDto: CheckoutDto,
-              private orderDto: OrderDto,
-              private instantCheckupDto: InstantCheckupDto,
-              private favouriteDto: FavouriteDto) {}
+              private checkoutService: CheckoutService,
+              private orderService: OrderService,
+              private instantCheckupService: InstantCheckupService,
+              private favouriteService: FavouriteService) {}
 
   async pushItemToConcernList(user: Parse.Object, concern: string): Promise<Parse.Object> {
     const _user = await this.userDto.fetchUser(user, { useMasterKey: true });
@@ -34,10 +38,10 @@ export class UserService {
     }
 
     const [favourites, checkout, orders, instantCheckups] = await Promise.all([
-      this.favouriteDto.fetchFavourites(oldUser, { useMasterKey: true }),
-      this.checkoutDto.findCheckout(oldUser, { useMasterKey: true }),
-      this.orderDto.getAllOrders(oldUser, { useMasterKey: true }),
-      this.instantCheckupDto.findInstantCheckups({ user: oldUser }, { useMasterKey: true }),
+      this.favouriteService.fetchFavourites(oldUser, { useMasterKey: true }),
+      this.checkoutService.findCheckout(oldUser, { useMasterKey: true }),
+      this.orderService.getAllOrders(oldUser, { useMasterKey: true }),
+      this.instantCheckupService.findInstantCheckups({ user: oldUser }, { useMasterKey: true }),
     ]);
 
     const promises = [];
@@ -48,7 +52,7 @@ export class UserService {
       instantCheckups.forEach((item: Parse.Object) => promises.push(item.save({ user }, { useMasterKey: true })));
     }
     if (checkout) {
-      await this.checkoutDto.deleteCheckout(user, { useMasterKey: true });
+      await this.checkoutService.deleteCheckout(user, { useMasterKey: true });
       promises.push(checkout.save({ user }, { useMasterKey: true }));
       user.set('checkoutId', checkout.get('checkoutId'));
       user.set('checkoutToken', atob(checkout.get('checkoutId')).split('/')[4].split('?')[0]);

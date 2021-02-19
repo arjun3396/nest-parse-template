@@ -7,6 +7,7 @@ import { PurchaseHistoryService } from '../purchase-history/purchase-history.ser
 import { env } from '../../config';
 import rp from 'request-promise';
 import _ from 'lodash';
+import { CollectionUtil } from '../utils/collection.util';
 
 @Injectable()
 export class OrderService {
@@ -96,5 +97,9 @@ export class OrderService {
 
   async getOrder(orderId: string, option: Parse.FullOptions): Promise<Parse.Object> {
     return this.orderDto.getOrder(orderId, option);
+  }
+
+  async getAllOrders(user: Parse.Object, option: Parse.FullOptions): Promise<Array<Parse.Object>> {
+    return this.orderDto.getAllOrders(user, option);
   }
 }

@@ -2,6 +2,7 @@ import { Injectable } from '@nestjs/common';
 import { CheckoutService } from '../checkout/checkout.service';
 import { FavouriteDto } from './dto/favourite.dto';
 import { UserService } from '../user/user.service';
+import { CollectionUtil } from '../utils/collection.util';
 
 @Injectable()
 export class FavouriteService {
@@ -45,5 +46,9 @@ export class FavouriteService {
     await this.checkoutService.addProductToCheckout(destroyedFavoriteVariants[0].storefrontId, _user, option);
     const favourites: Array<{ [key: string]: any }> = await this.getAllFavourites(user, option);
     return favourites;
+  }
+
+  async fetchFavourites(user: Parse.Object, option: Parse.FullOptions): Promise<Array<Parse.Object>> {
+    return this.favouriteDto.fetchFavourites(user, option);
   }
 }

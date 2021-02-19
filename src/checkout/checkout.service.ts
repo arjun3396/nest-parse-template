@@ -4,7 +4,7 @@ import moment from 'moment';
 import _ from 'lodash';
 import { env } from '../../config';
 import rp from 'request-promise';
-import { QueryUtil } from '../utils/query.util';
+import { CollectionUtil, QueryUtil } from '../utils/query.util';
 import { ConsultationSessionService } from '../consultation-session/consultation-session.service';
 import { ProductService } from '../product/product.service';
 import { OrderService } from '../order/order.service';
@@ -232,5 +232,13 @@ export class CheckoutService {
   async getLineItemsCount(user: Parse.Object, option: Parse.FullOptions): Promise<number> {
     const checkout: Parse.Object = await this.checkoutDto.findOrCreateCheckout(user, option);
     return checkout.get('lineItems').length;
+  }
+
+  async findCheckout(user: Parse.Object, option: Parse.FullOptions): Promise<Parse.Object> {
+    return this.checkoutDto.findCheckout(user, option);
+  }
+
+  async deleteCheckout(user: Parse.Object, option: Parse.FullOptions): Promise<Parse.Object> {
+    return this.checkoutDto.deleteCheckout(user, option);
   }
 }

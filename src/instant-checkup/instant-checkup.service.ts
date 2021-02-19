@@ -78,4 +78,8 @@ export class InstantCheckupService {
       .all(instantCheckups.map(async (item: Parse.Object) => this.signInstantCheckupURLResolver(item)));
     return mappedInstantCheckups;
   }
+
+  async findInstantCheckups(where: {[key: string]: any}, option: Parse.FullOptions): Promise<Array<Parse.Object>> {
+    return this.instantCheckupDto.findInstantCheckups(where, option);
+  }
 }
