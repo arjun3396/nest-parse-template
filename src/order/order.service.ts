@@ -14,8 +14,26 @@ export class OrderService {
   constructor(private orderDto: OrderDto,
               private productService: ProductService,
               private checkoutService: CheckoutService,
-              private favouriteServer: FavouriteService,
+              private favouriteService: FavouriteService,
               private purchaseHistoryService: PurchaseHistoryService) {}
+
+  async repeatOrder(orderId: string, user: Parse.Object, option: Parse.FullOptions)
+    : Promise<any> {
+    if (!orderId) {
+      return Promise.reject(new Error('Missing required params: orderId'));
+    }
+
+    const order = await this.getOrder(orderId, option);
+    if (!order) {
+      return Promise.reject(new Error(`No order found with orderId: ${orderId}`));
+    }
+
+    const lineItems = order.get('checkoutLineItems');
+    await this.checkoutService.clearCheckout(user, option);
+    const checkout = await this.checkoutService.findOrCreateCheckout(user, option);
+    await checkout.save({ lineItems }, option);
+    return this.checkoutService.getCheckout(user, option);
+  }
 
   async getOrderHistory(user: Parse.Object, option: Parse.FullOptions): Promise<Array<{ [key: string]: any }>> {
     const allOrders = await this.orderDto.getAllOrders(user, option);
@@ -46,7 +64,7 @@ export class OrderService {
     }
 
     const checkout = await this.checkoutService.getCheckout(user, option);
-    const favourites = await this.favouriteServer.getAllFavourites(user, option);
+    const favourites = await this.favouriteService.getAllFavourites(user, option);
     let resultJSONL = order.get('lineItems');
     resultJSONL = await this.productService.checkIfAddedToCheckout(resultJSONL, checkout);
     resultJSONL = await this.productService.checkIfAddedToFavorite(resultJSONL, favourites);

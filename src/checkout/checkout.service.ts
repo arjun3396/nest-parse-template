@@ -4,18 +4,16 @@ import moment from 'moment';
 import _ from 'lodash';
 import { env } from '../../config';
 import rp from 'request-promise';
-import { CollectionUtil, QueryUtil } from '../utils/query.util';
+import { QueryUtil } from '../utils/query.util';
 import { ConsultationSessionService } from '../consultation-session/consultation-session.service';
 import { ProductService } from '../product/product.service';
-import { OrderService } from '../order/order.service';
 
 @Injectable()
 export class CheckoutService {
   constructor(private checkoutDto: CheckoutDto,
               private queryUtil: QueryUtil,
               private consultationSessionService: ConsultationSessionService,
-              private productService: ProductService,
-              private orderService: OrderService) {}
+              private productService: ProductService) {}
 
   async clearCheckout(user: Parse.Object, option: Parse.FullOptions): Promise<{ [key: string]: any }> {
     const _user = await this.queryUtil.fetchObject(user, 'username', option);
@@ -194,24 +192,6 @@ export class CheckoutService {
     })) as Array<{ [key: string]: any }>;
   }
 
-  async repeatOrder(orderId: string, user: Parse.Object, option: Parse.FullOptions)
-    : Promise<any> {
-    if (!orderId) {
-      return Promise.reject(new Error('Missing required params: orderId'));
-    }
-
-    const order = await this.orderService.getOrder(orderId, option);
-    if (!order) {
-      return Promise.reject(new Error(`No order found with orderId: ${orderId}`));
-    }
-
-    const lineItems = order.get('checkoutLineItems');
-    await this.clearCheckout(user, option);
-    const checkout = await this.checkoutDto.findOrCreateCheckout(user, option);
-    await checkout.save({ lineItems }, option);
-    return this.getCheckout(user, option);
-  }
-
   convertLineItemsToSupportedFormat(lineItems: Array<{ [key: string]: any }>): string {
     let lineItemsString = '';
     lineItems.forEach((item: any) => {
@@ -227,6 +207,10 @@ export class CheckoutService {
       checkoutUrl: checkout.get('checkoutUrl'),
       checkoutId: checkout.get('checkoutId') };
     return result;
+  }
+
+  async findOrCreateCheckout(user: Parse.Object, option: Parse.FullOptions): Promise<Parse.Object> {
+    return this.checkoutDto.findOrCreateCheckout(user, option);
   }
 
   async getLineItemsCount(user: Parse.Object, option: Parse.FullOptions): Promise<number> {

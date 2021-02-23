@@ -8,6 +8,7 @@ import { UtilsModule } from '../utils/utils.module';
   providers: [MainConcernService],
   imports: [
     UtilsModule
-  ]
+  ],
+  exports: [MainConcernService]
 })
 export class MainConcernModule {}

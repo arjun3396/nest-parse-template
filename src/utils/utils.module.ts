@@ -10,6 +10,7 @@ import { SentryUtil } from './sentry.util';
 import { StorageUtil } from './storage.util';
 
 @Module({
-  providers: [AuthUtil, CollectionUtil, DB, MongoDBConnection, QueryUtil, Tree, EventEmitterUtil, SentryUtil, StorageUtil]
+  providers: [AuthUtil, CollectionUtil, DB, MongoDBConnection, QueryUtil, Tree, EventEmitterUtil, SentryUtil, StorageUtil],
+  exports: [QueryUtil, StorageUtil, Tree, AuthUtil, EventEmitterUtil, SentryUtil],
 })
 export class UtilsModule {}

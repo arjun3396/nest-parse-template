@@ -18,10 +18,11 @@ import { UserResponseModule } from './user-response/user-response.module';
 import { PurchaseHistoryModule } from './purchase-history/purchase-history.module';
 import { ConsultationSessionModule } from './consultation-session/consultation-session.module';
 import { UtilsModule } from './utils/utils.module';
+import { ProductApiModule } from './product-api/product-api.module';
 
 @Module({
-  imports: [UserModule, TreeModule, QuestionModule, ProductTypeModule, ProductModule, ProductBrandModule, OrderModule, NotificationModule, MainConcernModule, InstantCheckupModule, HelpModule, FavouriteModule, CheckoutModule, UserResponseModule, PurchaseHistoryModule, ConsultationSessionModule, UtilsModule],
+  imports: [UserModule, TreeModule, QuestionModule, ProductTypeModule, ProductModule, ProductBrandModule, OrderModule, NotificationModule, MainConcernModule, InstantCheckupModule, HelpModule, FavouriteModule, CheckoutModule, UserResponseModule, PurchaseHistoryModule, ConsultationSessionModule, UtilsModule, ProductApiModule],
   controllers: [ParseServerController],
-  providers: [QueryService],
+  providers: [],
 })
 export class AppModule {}

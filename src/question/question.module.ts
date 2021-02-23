@@ -7,6 +7,7 @@ import { UtilsModule } from '../utils/utils.module';
 @Module({
   controllers: [QuestionController],
   providers: [QuestionService, QuestionDto],
-  imports: [UtilsModule]
+  imports: [UtilsModule],
+  exports: [QuestionService]
 })
 export class QuestionModule {}

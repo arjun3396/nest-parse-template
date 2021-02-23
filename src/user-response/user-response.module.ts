@@ -7,6 +7,7 @@ import { UtilsModule } from '../utils/utils.module';
   providers: [UserResponseService, UserResponseDto],
   imports: [
     UtilsModule
-  ]
+  ],
+  exports: [UserResponseService]
 })
 export class UserResponseModule {}

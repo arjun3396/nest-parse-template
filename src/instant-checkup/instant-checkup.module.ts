@@ -8,7 +8,8 @@ import { UtilsModule } from '../utils/utils.module';
   providers: [InstantCheckupService, InstantCheckupDto],
   controllers: [InstantCheckupController],
   imports: [
-    UtilsModule
-  ]
+    UtilsModule,
+  ],
+  exports: [InstantCheckupService]
 })
 export class InstantCheckupModule {}

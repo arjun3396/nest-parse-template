@@ -1,15 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { CollectionUtil, QueryUtil } from '../utils/query.util';
 import { ProductDto } from './dto/product.dto';
-import { CheckoutService } from '../checkout/checkout.service';
-import { FavouriteService } from '../favourite/favourite.service';
 
 @Injectable()
 export class ProductService {
-  constructor(private queryUtil: QueryUtil,
-              private productDto: ProductDto,
-              private checkoutService: CheckoutService,
-              private favoriteService: FavouriteService) {}
+  constructor(private productDto: ProductDto) {}
 
   checkIfAddedToCheckout(result: Array<{[key: string]: any }>, checkout: { [key: string]: any }): any {
     if (checkout.lineItems.length) {
@@ -51,9 +45,11 @@ export class ProductService {
   async getProductById(objectId: string, user: Parse.Object, option: Parse.FullOptions): Promise<Array<{[key: string]: any}>> {
     const result: Parse.Object = await this.productDto.findById(objectId, option);
     if (!result) { await Promise.reject(new Error(`No product found with objectId: ${objectId}`)); }
-    let resultJSON: Array<{[key: string]: any }> = [result].map((product) => JSON.parse(JSON.stringify(product)) as {[key: string]: any });
-    const checkout: {[key: string]: any } = await this.checkoutService.getCheckout(user, option);
-    const favorites: Array<{ [key: string]: any }> = await this.favoriteService.getAllFavourites(user, option);
+    const resultJSON: Array<{[key: string]: any }> = [result].map((product) => JSON.parse(JSON.stringify(product)) as {[key: string]: any });
+    return resultJSON;
+  }
+
+  checkIfProductsAreAddedInCheckoutOrFavourites(resultJSON: Array<{[key: string]: any }>, checkout: { [key: string]: any }, favorites: Array<{ [key: string]: any }>): Array<{[key: string]: any}> {
     resultJSON = this.checkIfAddedToCheckout(resultJSON, checkout);
     resultJSON = this.checkIfAddedToFavorite(resultJSON, favorites);
     if (resultJSON[0].addedToCheckout) {
@@ -70,22 +66,14 @@ export class ProductService {
   async getProductsByType(productType: string, user: Parse.Object, option: Parse.FullOptions): Promise<Array<{ [key: string]: any }>> {
     const result: Array<Parse.Object> = await this.productDto.findByType(productType, option);
     if (!result.length) { await Promise.reject(new Error(`No product found with type: ${productType}`)); }
-    let resultJSON: Array<{ [key: string]: any }> = result.map((product) => JSON.parse(JSON.stringify(product)) as { [key: string]: any });
-    const checkout = await this.checkoutService.getCheckout(user, option);
-    const favorites = await this.favoriteService.getAllFavourites(user, option);
-    resultJSON = this.checkIfAddedToCheckout(resultJSON, checkout);
-    resultJSON = this.checkIfAddedToFavorite(resultJSON, favorites);
+    const resultJSON: Array<{ [key: string]: any }> = result.map((product) => JSON.parse(JSON.stringify(product)) as { [key: string]: any });
     return resultJSON;
   }
 
   async getProductsByTag(tag: string, user: Parse.Object, option: Parse.FullOptions, limit?: number): Promise<Array<{[key: string]: any}>> {
     const result: Array<Parse.Object> = await this.productDto.findByTags([tag], option, limit);
     if (!result.length) { await Promise.reject(new Error(`No product found with tag: ${tag}`)); }
-    let resultJSON: Array<{[key: string]: any}> = result.map((product) => JSON.parse(JSON.stringify(product)) as { [key: string]: any });
-    const checkout = await this.checkoutService.getCheckout(user, option);
-    const favorites = await this.favoriteService.getAllFavourites(user, option);
-    resultJSON = this.checkIfAddedToCheckout(resultJSON, checkout);
-    resultJSON = this.checkIfAddedToFavorite(resultJSON, favorites);
+    const resultJSON: Array<{[key: string]: any}> = result.map((product) => JSON.parse(JSON.stringify(product)) as { [key: string]: any });
     return resultJSON;
   }
 
@@ -93,11 +81,7 @@ export class ProductService {
     : Promise<Array<{[key: string]: any}>> {
     const result: Array<Parse.Object> = await this.productDto.findByTitle(title, option, limit);
     if (!result.length) { await Promise.reject(new Error(`No product found with name: ${title}`)); }
-    let resultJSON: Array<{[key: string]: any}> = result.map((product) => JSON.parse(JSON.stringify(product)) as { [key: string]: any });
-    const checkout = await this.checkoutService.getCheckout(user, option);
-    const favorites = await this.favoriteService.getAllFavourites(user, option);
-    resultJSON = this.checkIfAddedToCheckout(resultJSON, checkout);
-    resultJSON = this.checkIfAddedToFavorite(resultJSON, favorites);
+    const resultJSON: Array<{[key: string]: any}> = result.map((product) => JSON.parse(JSON.stringify(product)) as { [key: string]: any });
     return resultJSON;
   }
 

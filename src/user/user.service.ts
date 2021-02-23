@@ -1,8 +1,4 @@
 import { Injectable } from '@nestjs/common';
-import { FavouriteDto } from '../favourite/dto/favourite.dto';
-import { InstantCheckupDto } from '../instant-checkup/dto/instant-checkup.dto';
-import { OrderDto } from '../order/dto/order.dto';
-import { CheckoutDto } from '../checkout/dto/checkout.dto';
 import { CollectionUtil, QueryUtil } from '../utils/query.util';
 import { UserDto } from './dto/user.dto';
 import { CheckoutService } from '../checkout/checkout.service';

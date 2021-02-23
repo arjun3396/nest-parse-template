@@ -1,14 +1,11 @@
 import { Injectable } from '@nestjs/common';
 import { CheckoutService } from '../checkout/checkout.service';
 import { FavouriteDto } from './dto/favourite.dto';
-import { UserService } from '../user/user.service';
-import { CollectionUtil } from '../utils/collection.util';
 
 @Injectable()
 export class FavouriteService {
   constructor(private checkoutService: CheckoutService,
-              private favouriteDto: FavouriteDto,
-              private userService: UserService) {}
+              private favouriteDto: FavouriteDto) {}
 
   async getAllFavourites(user: Parse.Object, option: Parse.FullOptions): Promise<Array<{ [key: string]: any }>> {
     const favourites: Array<Parse.Object> = await this.favouriteDto.fetchFavourites(user, option);
@@ -36,15 +33,14 @@ export class FavouriteService {
     return favourites;
   }
 
-  async moveFromFavouriteToCheckout(user: Parse.Object, productId: string, option: Parse.FullOptions):
+  async moveFromFavouriteToCheckout(_user: Parse.Object, productId: string, option: Parse.FullOptions):
     Promise<Array<{ [key: string]: any }>> {
-    const _user = await this.userService.fetchUser(user, option);
     const destroyedFavoriteVariants = await this.favouriteDto.destroyFavorite(_user, productId, option);
     if (!destroyedFavoriteVariants.length) {
       return Promise.reject(new Error('No product found to add to checkout'));
     }
     await this.checkoutService.addProductToCheckout(destroyedFavoriteVariants[0].storefrontId, _user, option);
-    const favourites: Array<{ [key: string]: any }> = await this.getAllFavourites(user, option);
+    const favourites: Array<{ [key: string]: any }> = await this.getAllFavourites(_user, option);
     return favourites;
   }
 

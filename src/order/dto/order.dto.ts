@@ -1,12 +1,10 @@
 import { Injectable } from '@nestjs/common';
 import { CollectionUtil, QueryUtil } from '../../utils/query.util';
-import { ConsultationSessionDto } from '../../consultation-session/dto/consultation-session.dto';
 import { env } from '../../../config';
 
 @Injectable()
 export class OrderDto {
-  constructor(private consultationSessionDto: ConsultationSessionDto,
-              private queryUtil: QueryUtil) {}
+  constructor(private queryUtil: QueryUtil) {}
 
   async getAllOrders(user: Parse.Object, option: Parse.FullOptions): Promise<Array<Parse.Object>> {
     return this.queryUtil.find(CollectionUtil.Order, { where: { user }, descending: 'createdAt', option });
@@ -19,7 +17,7 @@ export class OrderDto {
 
   async saveOrder(user: Parse.Object, orderDetails: {[key: string]: any}, lineItems: any, checkoutLineItems: any, option: Parse.FullOptions)
     : Promise<{[key: string]: any}> {
-    const consultationSession = await this.consultationSessionDto.findConsultationSession(user, option);
+    // const consultationSession = await this.consultationSessionDto.findConsultationSession(user, option);
     const order = new CollectionUtil.Order();
     order.set('orderDetails', orderDetails);
     order.set('lineItems', lineItems);
@@ -28,11 +26,11 @@ export class OrderDto {
     order.set('delivered', false);
     order.set('orderId', orderDetails.id.toString());
     order.set('orderURL', `https://${env.SHOPIFY_SHOPNAME}/admin/orders/${orderDetails.id}`);
-    if (consultationSession && consultationSession.get('regimenTag') && consultationSession.get('regimenTag').includes('RX')) {
+    // if (consultationSession && consultationSession.get('regimenTag') && consultationSession.get('regimenTag').includes('RX')) {
       order.set('approved', false);
-    } else {
-      order.set('approved', true);
-    }
+    // } else {
+    //   order.set('approved', true);
+    // }
     await order.save({}, option);
     return { status: 'success', orderId: order.id };
   }

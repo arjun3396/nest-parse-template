@@ -17,21 +17,7 @@ export class CheckoutController {
     this.removeProductsFromCart();
     this.updateCheckout();
     this.getCheckout();
-    this.repeatOrder();
     this.clearCheckout();
-  }
-
-  repeatOrder(): void {
-    this.authService.authenticatedCloudFunction('repeatOrder', async (req: Parse.Cloud.FunctionRequest, option: Parse.FullOptions) => {
-      let result: { [key: string]: any };
-      try {
-        result = await this.checkoutService.repeatOrder(req.params.orderId, req.user, option);
-      } catch (error) {
-        SentryUtil.captureException(error);
-        await Promise.reject(error);
-      }
-      return result;
-    });
   }
 
   clearCheckout(): void {
