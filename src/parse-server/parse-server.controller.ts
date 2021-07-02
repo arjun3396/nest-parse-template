@@ -30,25 +30,10 @@ export class ParseServerController {
       },
     };
 
-    const ext = __filename.split('.').pop();
-    parseServerConfig.cloud = `${env.root}/main.${ext}`;
-
     parseServerConfig.databaseOptions = {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     };
-
-    // if (env.ssl.db.enable) {
-    //   parseServerConfig.databaseOptions = {
-    //     ...parseServerConfig.databaseOptions,
-    //     socketTimeoutMS: 20000,
-    //     ssl: true,
-    //     sslValidate: true,
-    //     sslCA: fs.readFileSync(env.ssl.db.ca),
-    //     sslCert: fs.readFileSync(env.ssl.db.cert),
-    //     sslKey: fs.readFileSync(env.ssl.db.key),
-    //   };
-    // }
 
     switch (process.env.NODE_ENV) {
       case 'test': {
